@@ -1,0 +1,76 @@
+.rewiews__card {
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(-10.649px 7.456px 15px rgba(151, 167, 156, 0.17));
+    background-color: #f8faf9;
+    padding: 50px 180px 30px 45px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.rewiews__card-img {
+    display: flex;
+    align-items: center;
+    max-width: 255px;
+    max-height: 255px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.reviews__card-pic {
+    display: block;
+    width: 100%;
+}
+
+.rewiews__card-content {
+
+
+    h3 {
+        font-size: 30px;
+        color: #000000;
+        font-family: "Alegreya Sans";
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    h4 {
+        font-size: 18px;
+        color: #000000;
+        font-family: "Alegreya Sans";
+        font-weight: 500;
+
+    }
+}
+
+.rewiews__card-text {
+    font-size: 18px;
+    color: #666666;
+    font-family: "Alegreya Sans";
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+
+.reviews__icons-list {
+    display: flex;
+    justify-content: center;
+}
+
+.reviews__icons-item {
+    margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.reviews__icons-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    &:hover {
+        border: 6px solid #365a49;
+    }
+}

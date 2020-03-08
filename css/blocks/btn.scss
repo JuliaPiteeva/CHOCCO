@@ -1,0 +1,21 @@
+.btn__link {
+    font-size: 19px;
+    color: $green;
+    font-family: "Alegreya Sans";
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border-radius: 29px;
+    background-color: #ffffff;
+
+    &:hover {
+        color: #fff;
+        filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.15));
+        background-color: $dark-green;
+    }
+
+}
+
+.btn {
+    margin-bottom: 60px;
+}

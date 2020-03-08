@@ -1,0 +1,413 @@
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh;
+  min-height: 650px; }
+  .section--align--top {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+
+.section__title {
+  margin-bottom: 20px;
+  line-height: 1;
+  text-align: center; }
+  .section__title h1 {
+    font-size: 48px;
+    color: #000;
+    font-family: "Alegreya Sans";
+    font-weight: 700;
+    text-transform: uppercase; }
+  .section__title--align--left {
+    text-align: left; }
+  .section__title--color--white h1 {
+    color: #fff; }
+
+.header {
+  min-height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 25px 0px; }
+
+html,
+body {
+  height: 100%; }
+
+body {
+  font-size: 16px;
+  line-height: 1.42;
+  position: relative;
+  color: black; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.wrapper {
+  position: relative;
+  min-width: 980px;
+  min-height: 100%;
+  overflow: hidden; }
+
+.container {
+  width: 980px;
+  margin: 0 auto; }
+
+img {
+  display: block;
+  max-width: 100%; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  margin: 0;
+  padding: 0px; }
+  ul li {
+    list-style: none; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+footer {
+  position: relative;
+  width: 100%; }
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.menu__item {
+  margin-right: 20px; }
+
+.menu__item:last-child {
+  margin-right: 0px; }
+
+.menu__link {
+  font-size: 18px;
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-weight: 400; }
+
+.hero {
+  background: url("../img/list.png") center center/cover no-repeat;
+  background-color: #86c3d7; }
+
+.hero__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%; }
+
+.hero__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-flex: .8;
+  -ms-flex: .8;
+  flex: .8; }
+
+.hero__text {
+  width: 40%; }
+
+.hero__disc {
+  margin-bottom: 30px; }
+  .hero__disc p {
+    font-size: 21px;
+    color: #ffffff;
+    font-family: "Alegreya Sans";
+    font-weight: 400; }
+
+.hero__icons {
+  width: 60%; }
+
+.hero__icons-pic {
+  margin-right: 10px; }
+
+.hero__icons-text {
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-weight: 400; }
+
+.hero__icons-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.hero__icons-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 45px; }
+
+.btn__link {
+  font-size: 19px;
+  color: #365a49;
+  font-family: "Alegreya Sans";
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  border-radius: 29px;
+  background-color: #ffffff; }
+  .btn__link:hover {
+    color: #fff;
+    -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.15));
+    background-color: #2e4e3f; }
+
+.btn {
+  margin-bottom: 60px; }
+
+.contacts__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 24px;
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-weight: 400;
+  text-align: right; }
+  .contacts__phone::before {
+    content: "";
+    display: block;
+    position: relative;
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+    background: left center / contain no-repeat;
+    background-image: url("../icons/phone.png"); }
+  .contacts__phone:hover {
+    -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2)); }
+
+.features {
+  background: url("/img/features-bg.jpg") center center/cover no-repeat; }
+
+.features__disc {
+  font-size: 18px;
+  color: #666666;
+  font-family: "Alegreya Sans";
+  font-weight: 400;
+  text-align: center;
+  font-size: 18px;
+  padding: 5px 250px;
+  margin-bottom: 60px; }
+
+.features__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.features__item {
+  width: calc(100% / 3 - 53px); }
+
+.feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.feature__content h2 {
+  font-size: 27px;
+  color: #000000;
+  font-family: "Alegreya Sans";
+  font-weight: 700;
+  text-align: center; }
+
+.feature__text {
+  font-size: 18px;
+  color: #666666;
+  font-family: "Alegreya Sans";
+  font-weight: 300;
+  text-align: center; }
+
+.feature__img {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background-color: #f2f5f4;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.feature__img-pic {
+  display: block;
+  max-width: 80px;
+  max-height: 70px; }
+
+.feature__circle {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.feature__circle-elem {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #f2f5f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative; }
+  .feature__circle-elem:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: inherit;
+    right: 30px; }
+  .feature__circle-elem:after {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: inherit;
+    left: 30px; }
+
+.rewiews__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-filter: drop-shadow(-10.649px 7.456px 15px rgba(151, 167, 156, 0.17));
+  filter: drop-shadow(-10.649px 7.456px 15px rgba(151, 167, 156, 0.17));
+  background-color: #f8faf9;
+  padding: 50px 180px 30px 45px;
+  margin-bottom: 20px;
+  position: relative; }
+
+.rewiews__card-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 255px;
+  max-height: 255px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-right: 20px; }
+
+.reviews__card-pic {
+  display: block;
+  width: 100%; }
+
+.rewiews__card-content h3 {
+  font-size: 30px;
+  color: #000000;
+  font-family: "Alegreya Sans";
+  font-weight: 700;
+  margin-bottom: 30px; }
+
+.rewiews__card-content h4 {
+  font-size: 18px;
+  color: #000000;
+  font-family: "Alegreya Sans";
+  font-weight: 500; }
+
+.rewiews__card-text {
+  font-size: 18px;
+  color: #666666;
+  font-family: "Alegreya Sans";
+  font-weight: 400;
+  margin-bottom: 30px; }
+
+.reviews__icons-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.reviews__icons-item {
+  margin-right: 10px; }
+  .reviews__icons-item:last-child {
+    margin-right: 0px; }
+
+.reviews__icons-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden; }
+  .reviews__icons-img:hover {
+    border: 6px solid #365a49; }

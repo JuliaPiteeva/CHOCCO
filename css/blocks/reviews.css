@@ -1,0 +1,7 @@
+.reviews-show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.reviews-show__img {
+  max-width: 250px; }

@@ -1,0 +1,29 @@
+.features {
+    background: url("/img/features-bg.jpg") center center / cover no-repeat;
+
+}
+
+.features__disc {
+    font-size: 18px;
+    color: #666666;
+    font-family: "Alegreya Sans";
+    font-weight: 400;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px 250px;
+    margin-bottom: 60px;
+}
+
+
+
+.features__list {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.features__item {
+    width: calc(100% / 3 - 53px);
+
+}

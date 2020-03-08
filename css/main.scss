@@ -1,0 +1,18 @@
+$green: #365a49;
+$dark-green: #2e4e3f;
+$grey:#f2f5f4;
+
+@import "layout/normalize.scss";
+
+
+@import "section.scss";
+@import "header.scss";
+@import "base.scss";
+@import "menu.scss";
+@import "hero.scss";
+@import "btn.scss";
+@import "contacts.scss";
+@import "features.scss";
+
+@import "feature.scss";
+@import "reviews.scss";

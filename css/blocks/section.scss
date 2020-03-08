@@ -1,0 +1,33 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    min-height: 650px;
+
+    &--align--top {
+        justify-content: flex-start;
+    }
+}
+
+.section__title {
+    margin-bottom: 20px;
+    line-height: 1;
+    text-align: center;
+
+    h1 {
+        font-size: 48px;
+        color: #000;
+        font-family: "Alegreya Sans";
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &--align--left {
+        text-align: left;
+    }
+
+    &--color--white h1 {
+        color: #fff;
+    }
+}
