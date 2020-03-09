@@ -1,6 +1,9 @@
 .features {
     background: url("../img/features-bg.jpg") center center / cover no-repeat;
 
+    .features__container {
+        position: relative;
+    }
 }
 
 .features__disc {
@@ -26,4 +29,13 @@
 .features__item {
     width: calc(100% / 3 - 53px);
 
+}
+
+
+.features__berries-pic {
+    position: absolute;
+    top: 103%;
+    right: 0;
+    bottom: 0;
+    left: 0px;
 }
