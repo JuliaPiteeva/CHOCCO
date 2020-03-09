@@ -1,6 +1,6 @@
 .btn__link {
     font-size: 19px;
-    color: $green;
+    color: #365a49;
     font-family: "Alegreya Sans";
     font-weight: 800;
     text-transform: uppercase;
@@ -11,7 +11,7 @@
     &:hover {
         color: #fff;
         filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.15));
-        background-color: $dark-green;
+        background-color: #2e4e3f;
     }
 
 }

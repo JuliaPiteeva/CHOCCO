@@ -1,0 +1,17 @@
+.btn__link {
+  font-size: 19px;
+  color: #365a49;
+  font-family: "Alegreya Sans";
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  border-radius: 29px;
+  background-color: #ffffff; }
+  .btn__link:hover {
+    color: #fff;
+    -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.15));
+    background-color: #2e4e3f; }
+
+.btn {
+  margin-bottom: 60px; }

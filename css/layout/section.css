@@ -1,0 +1,32 @@
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh;
+  min-height: 650px; }
+  .section--align--top {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+
+.section__title {
+  margin-bottom: 20px;
+  line-height: 1;
+  text-align: center; }
+  .section__title h1 {
+    font-size: 48px;
+    color: #000;
+    font-family: "Alegreya Sans";
+    font-weight: 700;
+    text-transform: uppercase; }
+  .section__title--align--left {
+    text-align: left; }
+  .section__title--color--white h1 {
+    color: #fff; }
