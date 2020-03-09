@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,700,800&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -326,7 +327,7 @@ template {
     justify-content: flex-start; }
 
 .section__title {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   line-height: 1;
   text-align: center; }
   .section__title h1 {
@@ -339,6 +340,9 @@ template {
     text-align: left; }
   .section__title--color--white h1 {
     color: #fff; }
+
+.section__title--margin--bottom-small {
+  margin-bottom: 20px; }
 
 html,
 body {
@@ -672,26 +676,29 @@ footer {
   align-items: center;
   max-width: 255px;
   max-height: 255px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  margin-right: 20px; }
+  margin-right: 20px;
+  overflow: hidden; }
 
 .reviews__card-pic {
   display: block;
-  width: 100%; }
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover; }
 
-.rewiews__card-content h3 {
-  font-size: 30px;
-  color: #000000;
-  font-family: "Alegreya Sans";
-  font-weight: 700;
-  margin-bottom: 30px; }
-
-.rewiews__card-content h4 {
-  font-size: 18px;
-  color: #000000;
-  font-family: "Alegreya Sans";
-  font-weight: 500; }
+.rewiews__card-content {
+  width: 60%; }
+  .rewiews__card-content h3 {
+    font-size: 30px;
+    color: #000000;
+    font-family: "Alegreya Sans";
+    font-weight: 700;
+    margin-bottom: 30px; }
+  .rewiews__card-content h4 {
+    font-size: 18px;
+    color: #000000;
+    font-family: "Alegreya Sans";
+    font-weight: 500; }
 
 .rewiews__card-text {
   font-size: 18px;
@@ -720,3 +727,83 @@ footer {
   overflow: hidden; }
   .reviews__icons-img:hover {
     border: 6px solid #365a49; }
+
+.accordeon__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.accordeon__item {
+  width: calc(100% / 4);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.accordeon__img {
+  width: 220px;
+  height: 290px;
+  overflow: hidden;
+  margin-bottom: 25px; }
+
+.accordeon__img-pic {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover; }
+
+.accordeon--visible .accordeon__elem {
+  height: 100%; }
+
+.accordeon--visible .accordeon__title:after {
+  border-top-width: 0px;
+  border-bottom-color: #365a49;
+  border-bottom-width: 7px; }
+
+.accordeon__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline; }
+  .accordeon__title h2 {
+    font-size: 21px;
+    color: #000000;
+    font-family: "Alegreya Sans";
+    font-weight: 700; }
+  .accordeon__title:after {
+    content: "";
+    display: block;
+    margin-left: 5px;
+    width: 0px;
+    height: 0px;
+    border: 7px solid transparent;
+    border-top-color: #365a49;
+    border-bottom-width: 0px;
+    border-left-width: 5px;
+    border-right-width: 5px; }
+
+.accordeon__elem {
+  height: 0;
+  overflow: hidden;
+  text-align: center; }
+  .accordeon__elem h3 {
+    font-size: 18px;
+    color: #000000;
+    font-family: "Alegreya Sans";
+    font-weight: 400; }
+  .accordeon__elem p {
+    font-size: 18px;
+    color: #666666;
+    font-family: "Alegreya Sans";
+    font-weight: 300;
+    text-align: center; }

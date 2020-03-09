@@ -13,17 +13,19 @@
     align-items: center;
     max-width: 255px;
     max-height: 255px;
-    object-fit: cover;
     margin-right: 20px;
+    overflow: hidden;
 }
 
 .reviews__card-pic {
     display: block;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .rewiews__card-content {
-
+    width: 60%;
 
     h3 {
         font-size: 30px;
@@ -44,7 +46,7 @@
 
 .rewiews__card-text {
     font-size: 18px;
-    color: #666666;
+    color: $brown;
     font-family: "Alegreya Sans";
     font-weight: 400;
     margin-bottom: 30px;
