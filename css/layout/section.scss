@@ -23,12 +23,13 @@
         text-transform: uppercase;
     }
 
-    &--align--left {
-        text-align: left;
-    }
 
-    &--color--white h1 {
+    &--special--firstscreen h1 {
+        letter-spacing: 4px;
+        font-size: 53px;
+        line-height: 1.1;
         color: #fff;
+        text-align: left;
     }
 }
 

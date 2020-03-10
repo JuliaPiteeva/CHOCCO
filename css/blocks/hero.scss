@@ -1,8 +1,6 @@
 .hero {
     background: url("../img/list.png") center center / cover no-repeat;
     background-color: #86c3d7;
-
-
 }
 
 
@@ -43,6 +41,7 @@
 
 .hero__icons {
     width: 60%;
+    margin-bottom: 45px;
 }
 
 
@@ -72,10 +71,10 @@
 
 .hero__icons-item {
     display: flex;
-    margin-right: 45px;
+    margin-right: 40px;
 
     &:last-child {
-        margin-bottom: 0px;
+        margin-right: 0px;
     }
 }
 
