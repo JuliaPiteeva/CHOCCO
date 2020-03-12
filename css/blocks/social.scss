@@ -1,0 +1,23 @@
+.social__list {
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+.social__item {
+    margin-right: 20px;
+
+}
+
+.social__icon {
+    width: 20px;
+    height: 20px;
+    fill: #b2b2b2;
+    transition: .6s;
+
+    &:hover {
+        fill: #000000;
+    }
+}

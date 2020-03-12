@@ -1,25 +1,55 @@
-.contacts__phone {
+.contacts {
     display: flex;
     align-items: center;
 
+}
+
+.phone-icon {
+    width: 12px;
+    height: 11px;
+    fill: white;
+
+    &--footer {
+        fill: $green;
+    }
+}
+
+.contacts__phone {
     font-size: 24px;
     color: #ffffff;
     font-family: "Alegreya Sans";
     font-weight: 400;
-    text-align: right;
-
-    &::before {
-        content: "";
-        display: block;
-        position: relative;
-        margin-right: 5px;
-        width: 25px;
-        height: 25px;
-        background: left center / contain no-repeat;
-        background-image: url('../icons/phone.png');
-    }
+    margin-left: 5px;
 
     &:hover {
         filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
     }
+
+    &--footer {
+        font-size: 21px;
+        color: $green;
+    }
 }
+
+.contacts__adress {
+
+    font-size: 21px;
+    color: #000000;
+    font-family: "Alegreya Sans";
+    font-weight: 400;
+}
+
+
+
+
+
+// &::before {
+//     content: "";
+//     display: block;
+//     position: relative;
+//     margin-right: 5px;
+//     width: 25px;
+//     height: 25px;
+//     background: left center / contain no-repeat;
+//     background-image: url('../icons/phone.png');
+// }

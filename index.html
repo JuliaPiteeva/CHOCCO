@@ -18,32 +18,35 @@
                 батончики class="logo__img" />
               </a>
             </div>
-            <div class="menu">
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a href="#" class="menu__link">О нас</a>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" class="nav__link">О нас</a>
                 </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Батончики</a>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Батончики</a>
                 </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Команда</a>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Команда</a>
                 </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Меню</a>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Меню</a>
                 </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Отзывы</a>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Отзывы</a>
                 </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Как мы работаем</a>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Как мы работаем</a>
                 </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Контакты</a>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Контакты</a>
                 </li>
               </ul>
-            </div>
+            </nav>
             <div class="contacts">
+              <svg class="phone-icon">
+                <use xlink:href="./sprite.svg#phone"></use>
+              </svg>
               <a href="tel:88009039090" class="contacts__phone">
                 8 800 903 90 90
               </a>
@@ -68,37 +71,25 @@
             <div class="hero__icons">
               <ul class="hero__icons-list">
                 <li class="hero__icons-item">
-                  <div class="hero__icons-pic">
-                    <img
-                      src="icons/Icon-1.png"
-                      alt="Листья"
-                      class="hero__icons-img"
-                    />
-                  </div>
+                  <svg class="hero__icons-pic">
+                    <use xlink:href="./sprite.svg#cocoa"></use>
+                  </svg>
                   <div class="hero__icons-text">
                     <p>100% натуральный продукт</p>
                   </div>
                 </li>
                 <li class="hero__icons-item">
-                  <div class="hero__icons-pic">
-                    <img
-                      src="icons/Icon-2.png"
-                      alt="Авто"
-                      class="hero__icons-img"
-                    />
-                  </div>
+                  <svg class="hero__icons-pic">
+                    <use xlink:href="./sprite.svg#car"></use>
+                  </svg>
                   <div class="hero__icons-text">
                     <p>3-5 дней доставка по РФ</p>
                   </div>
                 </li>
                 <li class="hero__icons-item">
-                  <div class="hero__icons-pic">
-                    <img
-                      src="icons/Icon-3.png"
-                      alt="Авто"
-                      class="hero__icons-img"
-                    />
-                  </div>
+                  <svg class="hero__icons-pic">
+                    <use xlink:href="./sprite.svg#centimeter"></use>
+                  </svg>
                   <div class="hero__icons-text">
                     <p>Не портит вашу фигуру</p>
                   </div>
@@ -126,7 +117,9 @@
           <ul class="features__list">
             <li class="features__item feature">
               <div class="feature__img">
-                <img src="icons/benefit.png" alt="" class="feature__img-pic" />
+                <svg class="feature__img-pic">
+                  <use xlink:href="./sprite.svg#person"></use>
+                </svg>
               </div>
               <div class="feature__content">
                 <h2>Полезно</h2>
@@ -145,7 +138,9 @@
             </li>
             <li class="features__item feature">
               <div class="feature__img">
-                <img src="icons/benefit.png" alt="" class="feature__img-pic" />
+                <svg class="feature__img-pic">
+                  <use xlink:href="./sprite.svg#smile"></use>
+                </svg>
               </div>
               <div class="feature__content">
                 <h2>Полезно</h2>
@@ -164,7 +159,9 @@
             </li>
             <li class="features__item feature">
               <div class="feature__img">
-                <img src="icons/benefit.png" alt="" class="feature__img-pic" />
+                <svg class="feature__img-pic">
+                  <use xlink:href="./sprite.svg#arm"></use>
+                </svg>
               </div>
               <div class="feature__content">
                 <h2>Полезно</h2>
@@ -250,6 +247,66 @@
         </div>
       </section>
 
+      <section class="section menu">
+        <div class="container menu-container">
+          <div class="menu__title">
+            <h2>Меню</h2>
+          </div>
+          <div class="menu__accordeon">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <div class="menu__item-title menu__item-title--bg--1">
+                  <h3>Батончики с молоком</h3>
+                </div>
+
+                <div class="menu__hover menu__hover--active">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusamus, fuga praesentium? Dolor sequi culpa
+                    necessitatibus quibusdam qui illum deleniti, voluptatem
+                    dolores debitis facilis, ut aperiam eveniet libero?
+                    Consequuntur, obcaecati magni.
+                  </p>
+                  <svg></svg>
+                </div>
+              </li>
+              <li class="menu__item">
+                <div class="menu__item-title menu__item-title--bg--2">
+                  <h3>Батончики с мёдом и фруктами</h3>
+                </div>
+
+                <div class="menu__hover">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusamus, fuga praesentium? Dolor sequi culpa
+                    necessitatibus quibusdam qui illum deleniti, voluptatem
+                    dolores debitis facilis, ut aperiam eveniet libero?
+                    Consequuntur, obcaecati magni.
+                  </p>
+                  <svg></svg>
+                </div>
+              </li>
+              <li class="menu__item">
+                <div class="menu__item-title menu__item-title--bg--3">
+                  <h3>Батончики с дикими ягодами</h3>
+                </div>
+
+                <div class="menu__hover">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusamus, fuga praesentium? Dolor sequi culpa
+                    necessitatibus quibusdam qui illum deleniti, voluptatem
+                    dolores debitis facilis, ut aperiam eveniet libero?
+                    Consequuntur, obcaecati magni.
+                  </p>
+                  <svg></svg>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section class="section reviews-section">
         <div class="container reviews__container">
           <div class="section__title">
@@ -320,7 +377,57 @@
         </div>
       </section>
 
-      <section class="section"></section>
+      <section class="section contacts-section">
+        <div class="container">
+          <div class="map__img">
+            <img src="img/map.jpg" alt="" class="map__img-pic" />
+          </div>
+          <footer class="footer">
+            <div class="container footer-container">
+              <div class="footer__contacts">
+                <div class="contacts__adress">
+                  <p>Москва, ул. Новый Арбат, д.31/12</p>
+                </div>
+                <div class="contacts">
+                  <svg class="phone-icon phone-icon--footer">
+                    <use xlink:href="./sprite.svg#phone"></use>
+                  </svg>
+                  <a
+                    href="tel:88009039090"
+                    class="contacts__phone contacts__phone--footer"
+                  >
+                    8 800 903 90 90
+                  </a>
+                </div>
+              </div>
+              <div class="footer__social social">
+                <ul class="social__list">
+                  <li class="social__item">
+                    <svg class="social__icon">
+                      <use xlink:href="./sprite.svg#vk"></use>
+                    </svg>
+                  </li>
+                  <li class="social__item">
+                    <svg class="social__icon">
+                      <use xlink:href="./sprite.svg#tv"></use>
+                    </svg>
+                  </li>
+                  <li class="social__item">
+                    <svg class="social__icon">
+                      <use xlink:href="./sprite.svg#vk"></use>
+                    </svg>
+                  </li>
+                  <li class="social__item">
+                    <svg class="social__icon">
+                      <use xlink:href="./sprite.svg#tv"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </section>
     </div>
   </body>
 </html>
