@@ -1,12 +1,11 @@
-.menu {
-
-    width: 100%;
+.menu__bg-color {
+    background-color: rgba(51, 53, 55, .6);
     height: 100%;
+    width: 100%;
 }
 
 .menu-container {
-    background: url("../img/menu-bg.png") center center / cover no-repeat;
-    background-color: rgba(51, 53, 55, .5);
+    height: 100%;
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -27,45 +26,65 @@
 
 .menu__list {
     display: flex;
+    height: 100%;
 }
 
 .menu__item {
+    display: block;
     display: flex;
 
 
 }
 
 .menu__item-title {
-    width: 100px;
+    max-width: 100px;
+    display: flex;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    align-items: center;
+    font-size: 48px;
+    color: $white;
+    font-family: "Alegreya Sans";
+    font-weight: 700;
+    padding: 10px 10px 10px;
+
 
     &--bg--1 {
         background: url("../img/menu-bg-1.png") center center / cover no-repeat;
+
     }
 
     &--bg--2 {
         background: url("../img/menu-bg-2.png") center center / cover no-repeat;
+
     }
 
     &--bg--3 {
         background: url("../img/menu-bg-3.png") center center / cover no-repeat;
+
     }
 
 }
 
 .menu__hover {
+    display: flex;
     width: 0;
     overflow: hidden;
-    background-color: rgba(51, 53, 55, .7);
+    background-color: rgba(51, 53, 55, .9);
+    z-index: 100;
+
 
     p {
         padding: 20px 10px;
     }
 
     &--active {
-        width: 420px;
+        width: 450px;
         font-size: 16px;
         color: #ffffff;
         font-family: "Alegreya Sans";
         font-weight: 400;
+
     }
+
 }

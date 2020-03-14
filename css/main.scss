@@ -2,6 +2,7 @@ $green: #365a49;
 $dark-green: #2e4e3f;
 $grey:#f2f5f4;
 $brown: #666666;
+$white:#fff;
 
 @import "layout/normalize.scss";
 @import "layout/fonts.scss";
@@ -22,6 +23,8 @@ $brown: #666666;
 @import "blocks/team.scss";
 @import "blocks/accordeon.scss";
 @import "blocks/menu.scss";
+@import "blocks/order.scss";
 @import "blocks/map.scss";
 @import "blocks/footer.scss";
 @import "blocks/social.scss";
+@import "blocks/decorations.scss";

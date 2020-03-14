@@ -1,0 +1,143 @@
+.order-container {
+    position: relative;
+}
+
+.order {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.order-left-col {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.order-right-col {
+    width: 50%;
+}
+
+.order__row {
+    margin-bottom: 20px;
+    display: flex;
+
+
+}
+
+
+.order__block {
+    flex: 1;
+    margin-right: 20px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+
+.order__title {
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: $green;
+    font-family: "Alegreya Sans";
+    font-weight: 400;
+}
+
+.order__input {
+    width: 100%;
+    padding: 23px 10px;
+    font-size: 18px;
+    color: #000000;
+    font-family: "Open Sans";
+    font-weight: 400;
+
+    &--textarea {
+        resize: vertical;
+    }
+}
+
+.order__swith-controls {
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 40px;
+    }
+}
+
+.switch-controls__buttons {
+    display: flex;
+}
+
+.switch-controls__elem {
+    display: flex;
+    margin-right: 20px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.switch-controls__elem-title {
+    font-size: 18px;
+    color: $green;
+    font-family: "Alegreya Sans";
+    font-weight: 400;
+}
+
+.switch-controls__radio {
+    display: none;
+
+    &:checked~.input__visible {
+        &:before {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: $green;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+    }
+}
+
+.input__visible {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin-right: 10px;
+}
+
+.switch-controls__checkbox {
+    display: none;
+
+    &:checked~.input__visible-checkbox {
+        &:before {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 5px;
+            height: 7px;
+            border: 3px solid $green;
+            left: 50%;
+            top: 50%;
+            transform: rotate(45deg) translate(-86%, -17%);
+            border-top: 0px;
+            border-left: 0px;
+
+        }
+    }
+}
+
+.input__visible-checkbox {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    border-radius: 1px;
+    background: #fff;
+    margin-right: 10px;
+}

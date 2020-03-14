@@ -19,3 +19,24 @@
 .btn {
     margin-bottom: 70px;
 }
+
+.button {
+    font-size: 19px;
+    color: #ffffff;
+    font-family: "Alegreya Sans";
+    font-weight: 800;
+    text-transform: uppercase;
+    background: $green;
+    padding: 25px 40px;
+    border-radius: 50px;
+
+    &--reset {
+        background-color: transparent;
+        text-transform: none;
+        color: $green;
+
+        &:hover {
+            color: #000;
+        }
+    }
+}

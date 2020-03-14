@@ -31,8 +31,27 @@
         color: #fff;
         text-align: left;
     }
+
+    &--color--green {
+        color: $green;
+    }
 }
 
 .section__title--margin--bottom-small {
     margin-bottom: 20px;
+}
+
+.menu {
+    background: url("../img/menu-bg.jpg") center center / cover no-repeat;
+}
+
+.order-section {
+    background: url("../img/order-bg.jpg") center center / cover no-repeat;
+    // position: relative;
+
+}
+
+.map-section {
+    background: url("../img/map.jpg") center center / cover no-repeat;
+    padding-bottom: 90px;
 }
