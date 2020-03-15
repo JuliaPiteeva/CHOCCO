@@ -4,7 +4,7 @@ body {
 }
 
 body {
-    font-size: 16px;
+    font-size: rem(16px);
     line-height: 1.42;
     position: relative;
     color: black;
@@ -16,14 +16,14 @@ body {
 
 .wrapper {
     position: relative;
-    min-width: 980px;
     min-height: 100%;
     overflow: hidden;
 }
 
 .container {
-    width: 980px;
+
     margin: 0 auto;
+    width: 95%;
 }
 
 
@@ -38,7 +38,7 @@ a {
 
 ul {
     margin: 0;
-    padding: 0px;
+    padding: rem(0px);
 
     li {
         list-style: none;

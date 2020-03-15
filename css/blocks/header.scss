@@ -4,5 +4,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 25px 0px;
-    margin-bottom: 65px;
+    margin-bottom: rem(65px);
+
+    @include tablets {
+        margin-bottom: rem(200px);
+    }
 }

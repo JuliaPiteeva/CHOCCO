@@ -1,5 +1,5 @@
 .btn__link {
-    font-size: 19px;
+    font-size: rem(19px);
     color: #365a49;
     font-family: "Alegreya Sans";
     font-weight: 800;
@@ -17,11 +17,11 @@
 }
 
 .btn {
-    margin-bottom: 70px;
+    margin-bottom: rem(70px);
 }
 
 .button {
-    font-size: 19px;
+    font-size: rem(19px);
     color: #ffffff;
     font-family: "Alegreya Sans";
     font-weight: 800;

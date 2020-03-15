@@ -11,12 +11,12 @@
 }
 
 .section__title {
-    margin-bottom: 50px;
+    margin-bottom: rem(50px);
     line-height: 1;
     text-align: center;
 
     h1 {
-        font-size: 48px;
+        font-size: rem(48px);
         color: #000;
         font-family: "Alegreya Sans";
         font-weight: 700;
@@ -26,10 +26,16 @@
 
     &--special--firstscreen h1 {
         letter-spacing: 4px;
-        font-size: 53px;
+        font-size: rem(53px);
         line-height: 1.1;
         color: #fff;
         text-align: left;
+
+        @include tablets {
+            text-align: center;
+            letter-spacing: 0px;
+        }
+
     }
 
     &--color--green {
@@ -38,12 +44,13 @@
 }
 
 .section__title--margin--bottom-small {
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
 }
 
 .menu {
     background: url("../img/menu-bg.jpg") center center / cover no-repeat;
 }
+
 
 .order-section {
     background: url("../img/order-bg.jpg") center center / cover no-repeat;
@@ -53,5 +60,5 @@
 
 .map-section {
     background: url("../img/map.jpg") center center / cover no-repeat;
-    padding-bottom: 90px;
+    padding-bottom: rem(90px);
 }

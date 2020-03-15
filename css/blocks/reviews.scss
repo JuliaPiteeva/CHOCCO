@@ -21,8 +21,8 @@
     align-items: center;
     filter: drop-shadow(-10.649px 7.456px 15px rgba(151, 167, 156, 0.17));
     background-color: #f8faf9;
-    padding: 50px 180px 30px 45px;
-    margin-bottom: 20px;
+    padding: rem(50px) rem(180px) rem(30px) rem(45px);
+    margin-bottom: rem(20px);
 
 }
 
@@ -40,7 +40,7 @@
     align-items: center;
     max-width: 255px;
     max-height: 255px;
-    margin-right: 20px;
+    margin-right: rem(20px);
     overflow: hidden;
 }
 
@@ -55,15 +55,15 @@
     width: 60%;
 
     h3 {
-        font-size: 30px;
+        font-size: rem(30px);
         color: #000000;
         font-family: "Alegreya Sans";
         font-weight: 700;
-        margin-bottom: 30px;
+        margin-bottom: rem(30px);
     }
 
     h4 {
-        font-size: 18px;
+        font-size: rem(18px);
         color: #000000;
         font-family: "Alegreya Sans";
         font-weight: 500;
@@ -72,11 +72,11 @@
 }
 
 .rewiews__card-text {
-    font-size: 18px;
+    font-size: rem(18px);
     color: $brown;
     font-family: "Alegreya Sans";
     font-weight: 400;
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
 }
 
 
@@ -86,7 +86,7 @@
 }
 
 .reviews__icons-item {
-    margin-right: 10px;
+    margin-right: rem(10px);
 
     &:last-child {
         margin-right: 0px;

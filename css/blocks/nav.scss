@@ -1,3 +1,9 @@
+.nav {
+    @include tablets {
+        display: none;
+    }
+}
+
 .nav__list {
     display: flex;
 
@@ -6,7 +12,7 @@
 
 
 .nav__item {
-    margin-right: 20px;
+    margin-right: rem(20px);
 }
 
 .nav__item:last-child {
@@ -14,7 +20,7 @@
 }
 
 .nav__link {
-    font-size: 18px;
+    font-size: rem(18px);
     color: #ffffff;
     font-family: "Alegreya Sans";
     font-weight: 400;

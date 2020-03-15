@@ -1,6 +1,11 @@
 .hero {
-    background: url("../img/list.png") center center / cover no-repeat;
+    background-image: url("../img/list.png") center center / cover no-repeat;
     background-color: #86c3d7;
+
+    @include tablets {
+        background-image: url("../img/768-list.png") center center / cover no-repeat;
+    }
+
 }
 
 
@@ -14,6 +19,10 @@
 .container--bg {
     background: url("../img/БатончикиЯгоды.png") center center / contain no-repeat;
 
+    @include tablets {
+        background: none;
+        background: url("../img/768-bg-berries.png")center center / cover no-repeat;
+    }
 
 }
 
@@ -26,22 +35,38 @@
 
 .hero__text {
     width: 40%;
+
+    @include tablets {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .hero__disc {
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
 
     p {
-        font-size: 21px;
+        font-size: rem(21px);
         color: #ffffff;
         font-family: "Alegreya Sans";
         font-weight: 400;
+    }
+
+    @include tablets {
+        text-align: center;
     }
 }
 
 .hero__icons {
     width: 60%;
-    margin-bottom: 45px;
+    margin-bottom: rem(45px);
+
+    @include tablets {
+        display: none;
+    }
 }
 
 
@@ -61,7 +86,7 @@
 }
 
 .hero__icons-text {
-    font-size: 16px;
+    font-size: rem(16px);
     color: #ffffff;
     font-family: "Alegreya Sans";
     font-weight: 400;

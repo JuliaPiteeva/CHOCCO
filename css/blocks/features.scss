@@ -7,14 +7,17 @@
 }
 
 .features__disc {
-    font-size: 18px;
+    font-size: rem(18px);
     color: #666666;
     font-family: "Alegreya Sans";
     font-weight: 400;
     text-align: center;
-    font-size: 18px;
     padding: 5px 250px;
-    margin-bottom: 60px;
+    margin-bottom: rem(60px);
+
+    @include tablets {
+        padding: 0;
+    }
 }
 
 
@@ -23,10 +26,31 @@
     display: flex;
     justify-content: space-between;
 
+    @include phones {
+        flex-direction: column;
+
+    }
+
 
 }
 
 .features__item {
-    width: calc(100% / 3 - 53px);
+    width: calc(100% / 3 - rem(53px));
+    margin-right: 20px;
 
+    &:last-child {
+        margin-right: 20px;
+    }
+
+    @include tablets {
+        width: calc(100% / 3 - rem(35px));
+        margin-right: 0;
+    }
+
+}
+
+.feature__item-slim {
+    @include tablets {
+        display: none;
+    }
 }
