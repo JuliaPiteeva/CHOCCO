@@ -3,7 +3,37 @@
     flex-direction: column;
     height: 100%;
     position: relative;
+
+    &:before {
+        display: block;
+        width: 80px;
+        height: 108px;
+        content: "";
+        position: absolute;
+        background: url("../img/hero-berries-2.png") center center / contain no-repeat;
+        bottom: -9%;
+        left: -5%;
+
+
+    }
+
+    &:after {
+        display: block;
+        width: 328px;
+        height: 149px;
+        content: "";
+        position: absolute;
+        background: url("../img/hero-berries-1.png") center center / contain no-repeat;
+        bottom: -12%;
+        right: 0%;
+
+        @include tablets {
+            bottom: -10%;
+        }
+
+    }
 }
+
 
 .hero__main {
     display: flex;
@@ -109,15 +139,15 @@
     @include tablets {
         height: 308px;
         background: url("../../img/hero-adaptiv-img.png") center center / contain no-repeat;
-        background-size: 89%;
-        overflow: visible;
+
+
     }
 
     @include phones {
         height: 245px;
         background: url("../../img/hero-adaptiv-img.png") center center / contain no-repeat;
-        background-size: 115%;
-        overflow: visible;
+
+
     }
 }
 

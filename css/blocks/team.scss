@@ -1,4 +1,18 @@
 .team__container {
     position: relative;
     margin-bottom: rem(70px);
+
+    &:before {
+        display: block;
+        width: 155px;
+        height: 127px;
+        content: "";
+        position: absolute;
+        background: url("../img/team-berry.png") center center / contain no-repeat;
+        top: 100%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        z-index: 20;
+    }
 }

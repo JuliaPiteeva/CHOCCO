@@ -4,6 +4,7 @@
 
 
 
+
     &--align--top {
         justify-content: flex-start;
     }
@@ -15,10 +16,13 @@
     margin-bottom: rem(50px);
     line-height: 1;
     text-align: center;
+    color: #000;
+
+
 
     h1 {
         font-size: rem(48px);
-        color: #000;
+
         font-family: "Alegreya Sans";
         font-weight: 700;
         text-transform: uppercase;
@@ -42,20 +46,19 @@
             text-align: center;
             letter-spacing: 0px;
         }
-
-
     }
 
     &--color--green {
         color: $green;
     }
 
+
     @include tablets {
-        margin-top: -8%;
+        margin-top: rem(-40px);
     }
 
     @include phones {
-        margin-top: -10%;
+        margin-top: rem(-40px);
     }
 }
 
@@ -84,9 +87,12 @@
     position: relative;
 }
 
-.reviews-section {
-    background: url("../img/reviwes-berries.png") center center / contain no-repeat;
+.team {
     height: 100%;
+}
+
+.reviews-section {
+    background: #fff
 }
 
 .order-section {

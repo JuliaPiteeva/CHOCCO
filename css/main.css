@@ -324,10 +324,10 @@ template {
   margin-top: 3.125rem;
   margin-bottom: 3.125rem;
   line-height: 1;
-  text-align: center; }
+  text-align: center;
+  color: #000; }
   .section__title h1 {
     font-size: 3rem;
-    color: #000;
     font-family: "Alegreya Sans";
     font-weight: 700;
     text-transform: uppercase; }
@@ -350,10 +350,10 @@ template {
     color: #365a49; }
   @media screen and (max-width: 768px) {
     .section__title {
-      margin-top: -8%; } }
+      margin-top: -2.5rem; } }
   @media screen and (max-width: 480px) {
     .section__title {
-      margin-top: -10%; } }
+      margin-top: -2.5rem; } }
 
 .section__title--margin--bottom-small {
   margin-bottom: 1.25rem; }
@@ -373,9 +373,11 @@ template {
   background: url("../img/menu-bg.jpg") center center/cover no-repeat;
   position: relative; }
 
-.reviews-section {
-  background: url("../img/reviwes-berries.png") center center/contain no-repeat;
+.team {
   height: 100%; }
+
+.reviews-section {
+  background: #fff; }
 
 .order-section {
   background: url("../img/order-bg.jpg") center center/cover no-repeat;
@@ -473,7 +475,7 @@ textarea {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 25px 0px;
+  padding: 25px 5px;
   margin-bottom: 4.0625rem; }
   @media screen and (max-width: 768px) {
     .header {
@@ -500,6 +502,37 @@ textarea {
   font-family: "Alegreya Sans";
   font-weight: 400; }
 
+.hamburger {
+  width: 24px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  position: relative;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  z-index: -100; }
+  .hamburger:before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    top: 9px; }
+  .hamburger:after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    bottom: 9px; }
+  @media screen and (max-width: 768px) {
+    .hamburger {
+      z-index: 10; } }
+
 .hero__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -510,6 +543,27 @@ textarea {
   flex-direction: column;
   height: 100%;
   position: relative; }
+  .hero__container:before {
+    display: block;
+    width: 80px;
+    height: 108px;
+    content: "";
+    position: absolute;
+    background: url("../img/hero-berries-2.png") center center/contain no-repeat;
+    bottom: -9%;
+    left: -5%; }
+  .hero__container:after {
+    display: block;
+    width: 328px;
+    height: 149px;
+    content: "";
+    position: absolute;
+    background: url("../img/hero-berries-1.png") center center/contain no-repeat;
+    bottom: -12%;
+    right: 0%; }
+    @media screen and (max-width: 768px) {
+      .hero__container:after {
+        bottom: -10%; } }
 
 .hero__main {
   display: -webkit-box;
@@ -600,15 +654,11 @@ textarea {
   @media screen and (max-width: 768px) {
     .hero__img {
       height: 308px;
-      background: url("../../img/hero-adaptiv-img.png") center center/contain no-repeat;
-      background-size: 89%;
-      overflow: visible; } }
+      background: url("../../img/hero-adaptiv-img.png") center center/contain no-repeat; } }
   @media screen and (max-width: 480px) {
     .hero__img {
       height: 245px;
-      background: url("../../img/hero-adaptiv-img.png") center center/contain no-repeat;
-      background-size: 115%;
-      overflow: visible; } }
+      background: url("../../img/hero-adaptiv-img.png") center center/contain no-repeat; } }
 
 .hero__img-pic {
   display: block;
@@ -709,8 +759,23 @@ textarea {
 
 .features {
   background: url("../img/features-bg.jpg") center center/cover no-repeat; }
-  .features .features__container {
-    position: relative; }
+
+.features__container {
+  position: relative; }
+  .features__container:before {
+    display: block;
+    width: 148px;
+    height: 220px;
+    content: "";
+    position: absolute;
+    background: url("../../img/features-raspberries.png") center center/contain no-repeat;
+    top: 100%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%; }
+    @media screen and (max-width: 480px) {
+      .features__container:before {
+        display: none; } }
 
 .features__disc {
   font-size: 1.125rem;
@@ -873,6 +938,26 @@ textarea {
 
 .reviews__container {
   position: relative; }
+  .reviews__container:before {
+    display: block;
+    width: 148px;
+    height: 322px;
+    content: "";
+    position: absolute;
+    background: url("../img/reviews-berries-part.png") center center/contain no-repeat;
+    top: 73%;
+    left: -5%;
+    right: 0%;
+    bottom: 0%; }
+  .reviews__container:after {
+    display: block;
+    width: 148px;
+    height: 322px;
+    content: "";
+    position: absolute;
+    background: url("../img/reviews-berries-part-2.png") center center/contain no-repeat;
+    top: -13%;
+    right: -5%; }
 
 .reviews {
   display: -webkit-box;
@@ -1008,6 +1093,18 @@ textarea {
 .team__container {
   position: relative;
   margin-bottom: 4.375rem; }
+  .team__container:before {
+    display: block;
+    width: 155px;
+    height: 127px;
+    content: "";
+    position: absolute;
+    background: url("../img/team-berry.png") center center/contain no-repeat;
+    top: 100%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 20; }
 
 .accordeon__list {
   display: -webkit-box;
@@ -1052,7 +1149,14 @@ textarea {
   margin-bottom: 1.56rem; }
   @media screen and (max-width: 768px) {
     .accordeon__img {
-      display: none; } }
+      height: 0;
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1;
+      margin-bottom: 0; } }
+  @media screen and (max-width: 480px) {
+    .accordeon__img {
+      height: 0; } }
 
 .accordeon__img-pic {
   display: block;
@@ -1068,6 +1172,10 @@ textarea {
   border-top-width: 0px;
   border-bottom-color: #365a49;
   border-bottom-width: 7px; }
+
+@media screen and (max-width: 768px) {
+  .accordeon--visible .accordeon__img {
+    height: 290px; } }
 
 .accordeon__title {
   display: -webkit-box;
@@ -1092,6 +1200,11 @@ textarea {
     border-bottom-width: 0px;
     border-left-width: 5px;
     border-right-width: 5px; }
+  @media screen and (max-width: 768px) {
+    .accordeon__title {
+      -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+      order: 0; } }
 
 .accordeon__elem {
   height: 0;
@@ -1110,6 +1223,11 @@ textarea {
     font-family: "Alegreya Sans";
     font-weight: 400;
     text-align: center; }
+  @media screen and (max-width: 768px) {
+    .accordeon__elem {
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2; } }
 
 .menu__bg-color {
   background-color: rgba(51, 53, 55, 0.6);
@@ -1233,6 +1351,24 @@ textarea {
 
 .order-container {
   position: relative; }
+  .order-container:before {
+    display: block;
+    width: 50px;
+    height: 50px;
+    content: "";
+    position: absolute;
+    background: url("../img/order-section-berry.png") center center/contain no-repeat;
+    top: 73%;
+    left: 0%; }
+  .order-container:after {
+    display: block;
+    width: 172px;
+    height: 197px;
+    content: "";
+    position: absolute;
+    background: url("../img/order-section-leaf.png") center center/contain no-repeat;
+    top: 61%;
+    right: 0%; }
 
 .order {
   display: -webkit-box;

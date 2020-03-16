@@ -1,0 +1,36 @@
+.hamburger {
+    width: 24px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    position: relative;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    z-index: -100;
+
+    &:before {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 4px;
+        border-radius: 2px;
+        background-color: #ffffff;
+        top: 9px;
+    }
+
+    &:after {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 4px;
+        border-radius: 2px;
+        background-color: #ffffff;
+        bottom: 9px;
+    }
+
+    @include tablets {
+        z-index: 10;
+    }
+}
