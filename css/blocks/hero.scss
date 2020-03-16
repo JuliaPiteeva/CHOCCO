@@ -138,14 +138,14 @@
 
     @include tablets {
         height: 308px;
-        background: url("../../img/hero-adaptiv-img.png") center center / contain no-repeat;
+        background: url("../img/hero-adaptiv-img.png") center center / contain no-repeat;
 
 
     }
 
     @include phones {
         height: 245px;
-        background: url("../../img/hero-adaptiv-img.png") center center / contain no-repeat;
+        background: url("../img/hero-adaptiv-img.png") center center / contain no-repeat;
 
 
     }

@@ -654,11 +654,11 @@ textarea {
   @media screen and (max-width: 768px) {
     .hero__img {
       height: 308px;
-      background: url("../../img/hero-adaptiv-img.png") center center/contain no-repeat; } }
+      background: url("../img/hero-adaptiv-img.png") center center/contain no-repeat; } }
   @media screen and (max-width: 480px) {
     .hero__img {
       height: 245px;
-      background: url("../../img/hero-adaptiv-img.png") center center/contain no-repeat; } }
+      background: url("../img/hero-adaptiv-img.png") center center/contain no-repeat; } }
 
 .hero__img-pic {
   display: block;
@@ -1360,6 +1360,9 @@ textarea {
     background: url("../img/order-section-berry.png") center center/contain no-repeat;
     top: 73%;
     left: 0%; }
+    @media screen and (max-width: 768px) {
+      .order-container:before {
+        display: none; } }
   .order-container:after {
     display: block;
     width: 172px;
@@ -1369,6 +1372,9 @@ textarea {
     background: url("../img/order-section-leaf.png") center center/contain no-repeat;
     top: 61%;
     right: 0%; }
+    @media screen and (max-width: 768px) {
+      .order-container:after {
+        display: none; } }
 
 .order {
   display: -webkit-box;

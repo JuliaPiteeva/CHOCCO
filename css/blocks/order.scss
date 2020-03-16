@@ -11,6 +11,10 @@
         top: 73%;
         left: 0%;
 
+        @include tablets {
+            display: none;
+        }
+
     }
 
     &:after {
@@ -22,6 +26,10 @@
         background: url("../img/order-section-leaf.png") center center / contain no-repeat;
         top: 61%;
         right: 0%;
+
+        @include tablets {
+            display: none;
+        }
 
     }
 }
