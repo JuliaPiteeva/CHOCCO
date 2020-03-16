@@ -2,6 +2,19 @@
     display: flex;
     align-items: center;
 
+    @include tablets {
+        display: none;
+    }
+
+    @include phones {
+        display: none;
+    }
+
+}
+
+.footer__phone {
+    display: flex;
+    align-items: center;
 }
 
 .phone-icon {

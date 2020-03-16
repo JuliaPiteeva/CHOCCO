@@ -5,15 +5,36 @@
 .order {
     display: flex;
     margin-bottom: rem(60px);
+
+    @include tablets {
+        flex-direction: column;
+        padding: 0 15%;
+    }
+
+    @include phones {
+        flex-direction: column;
+        padding: 0 1%;
+    }
 }
 
 .order-left-col {
     width: 50%;
     margin-right: rem(20px);
+
+    @include tablets {
+        margin-right: 0;
+        width: 100%;
+    }
 }
 
 .order-right-col {
     width: 50%;
+
+    @include tablets {
+
+        width: 100%;
+    }
+
 }
 
 .order__row {
@@ -44,7 +65,7 @@
 
 .order__input {
     width: 100%;
-    padding: 23px 10px;
+    padding: 5% 5%;
     font-size: rem(18px);
     color: #000000;
     font-family: "Open Sans";
@@ -52,14 +73,24 @@
 
     &--textarea {
         resize: vertical;
+
+        @include phones {
+            max-height: 80px;
+        }
+
     }
 }
 
 .order__swith-controls {
-    margin-bottom: rem(10px);
+    margin-bottom: 5%;
 
     &:last-child {
         margin-bottom: rem(40px);
+    }
+
+    @include phones {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -140,4 +171,11 @@
     border-radius: 1px;
     background: #fff;
     margin-right: 10px;
+}
+
+.order__buttons {
+    @include tablets {
+        display: flex;
+        justify-content: center;
+    }
 }

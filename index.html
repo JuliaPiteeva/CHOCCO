@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width", initial-scale=1.0" />
     <title>CHOCCO</title>
     <link rel="stylesheet" href="css/main.css" />
   </head>
@@ -11,7 +11,7 @@
     <div class="wrapper">
 
       <section class="section section--align--top hero">
-        <div class="container hero__container container--bg ">
+        <div class="container hero__container ">
           <div class="header">
             <div class="logo">
               <a href="№" class="header__logo">
@@ -54,48 +54,53 @@
             </div>
           </div>
           <div class="hero__content">
-            <div class="hero__text">
-              <div
-                class="section__title section__title--margin--bottom-small section__title--special--firstscreen"
-              >
-                <h1>натуральные шоколадные батончики</h1>
+            <div class="hero__main">
+              <div class="hero__text">
+                <div
+                  class="section__title section__title--margin--bottom-small section__title--special--firstscreen"
+                >
+                  <h1>натуральные шоколадные батончики</h1>
+                </div>
+                <div class="hero__disc">
+                  <p>
+                    Наши батончики идеально подходят для тех, кто следит за своим
+                  </p>
+                </div>
+                <div class="btn">
+                  <a href="#" class="btn__link">Заказать</a>
+                </div>
               </div>
-              <div class="hero__disc">
-                <p>
-                  Наши батончики идеально подходят для тех, кто следит за своим
-                </p>
-              </div>
-              <div class="btn">
-                <a href="#" class="btn__link">Заказать</a>
+              <div class="hero__icons">
+                <ul class="hero__icons-list">
+                  <li class="hero__icons-item">
+                    <svg class="hero__icons-pic">
+                      <use xlink:href="./sprite.svg#cocoa"></use>
+                    </svg>
+                    <div class="hero__icons-text">
+                      <p>100% натуральный продукт</p>
+                    </div>
+                  </li>
+                  <li class="hero__icons-item">
+                    <svg class="hero__icons-pic">
+                      <use xlink:href="./sprite.svg#car"></use>
+                    </svg>
+                    <div class="hero__icons-text">
+                      <p>3-5 дней доставка по РФ</p>
+                    </div>
+                  </li>
+                  <li class="hero__icons-item">
+                    <svg class="hero__icons-pic">
+                      <use xlink:href="./sprite.svg#centimeter"></use>
+                    </svg>
+                    <div class="hero__icons-text">
+                      <p>Не портит вашу фигуру</p>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
-            <div class="hero__icons">
-              <ul class="hero__icons-list">
-                <li class="hero__icons-item">
-                  <svg class="hero__icons-pic">
-                    <use xlink:href="./sprite.svg#cocoa"></use>
-                  </svg>
-                  <div class="hero__icons-text">
-                    <p>100% натуральный продукт</p>
-                  </div>
-                </li>
-                <li class="hero__icons-item">
-                  <svg class="hero__icons-pic">
-                    <use xlink:href="./sprite.svg#car"></use>
-                  </svg>
-                  <div class="hero__icons-text">
-                    <p>3-5 дней доставка по РФ</p>
-                  </div>
-                </li>
-                <li class="hero__icons-item">
-                  <svg class="hero__icons-pic">
-                    <use xlink:href="./sprite.svg#centimeter"></use>
-                  </svg>
-                  <div class="hero__icons-text">
-                    <p>Не портит вашу фигуру</p>
-                  </div>
-                </li>
-              </ul>
+            <div class="hero__img">
+              <img src="img/hero-bat.png" alt="Батончики" class="hero__img-pic">
             </div>
           </div>
           <img src="img/berries.png" alt="Ягоды" class="hero__decorations-img" />
@@ -255,49 +260,61 @@
             <div class="menu__accordeon">
               <ul class="menu__list">
                 <li class="menu__item">
+                  <div class="menu__hover menu__hover--active">
+                    <div class="menu__item-title menu__item-title--bg--1">
+                      <h3>Батончики с молоком</h3>
+                    </div>
+                    <article class="menu__hover-text">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Accusamus, fuga praesentium? Dolor sequi culpa
+                        necessitatibus quibusdam qui illum deleniti, voluptatem
+                        dolores debitis facilis, ut aperiam eveniet libero?
+                        Consequuntur, obcaecati magni.
+                      </p>
+                    </article>
+                  </div>
                   <div class="menu__item-title menu__item-title--bg--1">
                     <h3>Батончики с молоком</h3>
                   </div>
-  
-                  <article class="menu__hover menu__hover--active">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Accusamus, fuga praesentium? Dolor sequi culpa
-                      necessitatibus quibusdam qui illum deleniti, voluptatem
-                      dolores debitis facilis, ut aperiam eveniet libero?
-                      Consequuntur, obcaecati magni.
-                    </p>
-                  </article>
-                  <div class="menu__hover-close"></div>
                 </li>
                 <li class="menu__item">
+                  <div class="menu__hover">
+                    <div class="menu__item-title menu__item-title--bg--2">
+                      <h3>с мёдом и фруктами</h3>
+                    </div>
+                    <article class="menu__hover-text">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Accusamus, fuga praesentium? Dolor sequi culpa
+                        necessitatibus quibusdam qui illum deleniti, voluptatem
+                        dolores debitis facilis, ut aperiam eveniet libero?
+                        Consequuntur, obcaecati magni.
+                      </p>
+                    </article>
+                  </div>
                   <div class="menu__item-title menu__item-title--bg--2">
                     <h3>с мёдом и фруктами</h3>
                   </div>
-                  <article class="menu__hover">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Accusamus, fuga praesentium? Dolor sequi culpa
-                      necessitatibus quibusdam qui illum deleniti, voluptatem
-                      dolores debitis facilis, ut aperiam eveniet libero?
-                      Consequuntur, obcaecati magni.
-                    </p>
-                  </article>
                 </li>
                 <li class="menu__item">
+                  <div class="menu__hover">
+                    <div class="menu__item-title menu__item-title--bg--3">
+                      <h3>С дикими ягодами</h3>
+                    </div>
+                    <article class="menu__hover-text">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Accusamus, fuga praesentium? Dolor sequi culpa
+                        necessitatibus quibusdam qui illum deleniti, voluptatem
+                        dolores debitis facilis, ut aperiam eveniet libero?
+                        Consequuntur, obcaecati magni.
+                      </p>
+                    </article>
+                  </div>
                   <div class="menu__item-title menu__item-title--bg--3">
                     <h3>С дикими ягодами</h3>
                   </div>
-  
-                  <article class="menu__hover">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Accusamus, fuga praesentium? Dolor sequi culpa
-                      necessitatibus quibusdam qui illum deleniti, voluptatem
-                      dolores debitis facilis, ut aperiam eveniet libero?
-                      Consequuntur, obcaecati magni.
-                    </p>
-                  </article>
                 </li>
               </ul>
             </div>
@@ -468,7 +485,7 @@
               <div class="contacts__adress">
                 <p>Москва, ул. Новый Арбат, д.31/12</p>
               </div>
-              <div class="contacts">
+              <div class="footer__phone">
                 <svg class="phone-icon phone-icon--footer">
                   <use xlink:href="./sprite.svg#phone"></use>
                 </svg>
@@ -504,6 +521,7 @@
           </div>
         </footer>
       </section>
+
     </div>
   </body>
 </html>

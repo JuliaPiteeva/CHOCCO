@@ -8,9 +8,26 @@
 .menu-container {
     height: 100%;
     display: flex;
-    position: relative;
+    flex-direction: row;
     justify-content: space-between;
+
 }
+
+.menu__accordeon {
+
+    position: absolute;
+    right: 0;
+    height: 100%;
+    // position: absolute;
+    // top: 0;
+    // bottom: 0%;
+    // right: 0;
+    // left: 85%;
+
+
+}
+
+
 
 .menu__title {
     width: 40%;
@@ -21,24 +38,81 @@
     text-align: center;
     margin-top: rem(100px);
 
+    @include phones {
+        display: none;
+    }
+
+    @include tablets {
+        display: none;
+    }
+
 }
 
-.menu__accordeon {
-    width: 60%;
-}
 
 .menu__list {
     display: flex;
     height: 100%;
+    position: relative;
 }
 
 .menu__item {
-    display: block;
     display: flex;
+}
+
+.menu__hover {
+    display: flex;
+    width: 0;
+    overflow: hidden;
+    font-size: rem(16px);
+    color: #ffffff;
+    font-family: "Alegreya Sans";
+    font-weight: 400;
 
 
 
 
+    &--active {
+        width: 300px;
+
+        @include phones {
+            width: 216px
+        }
+    }
+
+    @include tablets {
+        display: none;
+    }
+
+
+}
+
+
+
+.menu__hover-text {
+    width: 300px;
+    overflow: hidden;
+    height: 100%;
+    background-color: rgba(51, 53, 55, .7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 100px;
+
+    p {
+        padding: 5% 5%;
+        font-size: rem(16px);
+        line-height: 24px;
+        color: #ffffff;
+        font-family: "Alegreya Sans";
+        font-weight: 400;
+
+    }
+
+    @include phones {
+        width: 70%;
+        left: 15%;
+    }
 }
 
 .menu__item-title {
@@ -51,72 +125,53 @@
     color: $white;
     font-family: "Alegreya Sans";
     font-weight: 700;
-    padding: 10px 10px 10px;
+    padding: 2% 2% 2%;
+
 
 
     &--bg--1 {
         background: url("../img/menu-bg-1.png") center center / cover no-repeat;
-
+        background-color: rgba(0, 0, 0, .9);
     }
 
     &--bg--2 {
         background: url("../img/menu-bg-2.png") center center / cover no-repeat;
-
+        background-color: rgba(0, 0, 0, .9);
     }
 
     &--bg--3 {
         background: url("../img/menu-bg-3.png") center center / cover no-repeat;
-
+        background-color: rgba(0, 0, 0, .9);
     }
 
 }
 
-.menu__hover {
-    display: flex;
-    width: 0;
-    overflow: hidden;
-    background-color: rgba(51, 53, 55, .9);
 
 
-
-    p {
-        padding: 20px 10px;
-    }
-
-    &--active {
-        width: 300px;
-        font-size: rem(16px);
-        color: #ffffff;
-        font-family: "Alegreya Sans";
-        font-weight: 400;
-
-    }
-
-}
 
 // .menu__hover-close {
 
-    //     &:before {
-    //         width: 3px;
-    //         height: 8px;
-    //         border-radius: 14px;
-    //         background-color: #ffffff;
-    //         transform: rotate(45deg);
-    //     }
+//     &:before {
+//         width: 3px;
+//         height: 8px;
+//         border-radius: 14px;
+//         background-color: #ffffff;
+//         transform: rotate(45deg);
+//     }
 
-    //     &:after {
-    //         content: "";
-    //         display: block;
-    //         position: absolute;
-    //         width: 3px;
-    //         height: 8px;
-    //         top: 0%;
-    //         left: 0%;
+//     &:after {
+//         content: "";
+//         display: block;
+//         position: absolute;
+//         width: 3px;
+//         height: 8px;
+//         top: 0%;
+//         left: 0%;
 
-    //         transform: rotate(45deg);
+//         transform: rotate(45deg);
 
-    //         background-color: #ffffff;
-    //         border-radius: 5px;
-    //     }
+//         background-color: #ffffff;
+//         border-radius: 5px;
+//     }
 
-    // }
+// }

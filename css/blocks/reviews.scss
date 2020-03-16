@@ -1,8 +1,3 @@
-.reviews-section {
-    background: url("../img/reviwes-berries.png") center center / contain no-repeat;
-
-}
-
 .reviews__container {
     position: relative;
 }
@@ -21,8 +16,18 @@
     align-items: center;
     filter: drop-shadow(-10.649px 7.456px 15px rgba(151, 167, 156, 0.17));
     background-color: #f8faf9;
-    padding: rem(50px) rem(180px) rem(30px) rem(45px);
+    padding: 5% 15% 5% 5%;
     margin-bottom: rem(20px);
+
+    @include tablets {
+        flex-direction: column;
+        padding: 5% 5% 5% 5%;
+    }
+
+    @include phones {
+        flex-direction: column;
+        padding: 5% 5% 5% 5%;
+    }
 
 }
 
@@ -42,6 +47,16 @@
     max-height: 255px;
     margin-right: rem(20px);
     overflow: hidden;
+
+    @include tablets {
+        margin-right: 0;
+        margin-bottom: 5%;
+    }
+
+    @include phones {
+        margin-right: 0;
+        margin-bottom: 3%;
+    }
 }
 
 .reviews__card-pic {
@@ -68,8 +83,15 @@
         font-family: "Alegreya Sans";
         font-weight: 500;
 
+
+    }
+
+    @include tablets {
+        width: 100%;
+        text-align: center;
     }
 }
+
 
 .rewiews__card-text {
     font-size: rem(18px);
@@ -83,6 +105,7 @@
 .reviews__icons-list {
     display: flex;
     justify-content: center;
+    margin-bottom: 10%;
 }
 
 .reviews__icons-item {

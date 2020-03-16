@@ -12,15 +12,17 @@
     font-family: "Alegreya Sans";
     font-weight: 400;
     text-align: center;
-    padding: 5px 250px;
+    padding: 1% 25%;
     margin-bottom: rem(60px);
 
     @include tablets {
-        padding: 0;
+        padding: 1% 17%;
+    }
+
+    @include phones {
+        padding: 0 0%;
     }
 }
-
-
 
 .features__list {
     display: flex;
@@ -28,29 +30,24 @@
 
     @include phones {
         flex-direction: column;
-
     }
-
 
 }
 
 .features__item {
-    width: calc(100% / 3 - rem(53px));
-    margin-right: 20px;
+    width: calc(100% / 3 - 33px);
+    margin-right: 3%;
 
     &:last-child {
-        margin-right: 20px;
+        margin-right: 0px;
     }
 
     @include tablets {
-        width: calc(100% / 3 - rem(35px));
-        margin-right: 0;
+        width: calc(100% / 3 - 15px);
     }
 
-}
-
-.feature__item-slim {
-    @include tablets {
-        display: none;
+    @include phones {
+        width: 100%;
     }
+
 }

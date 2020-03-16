@@ -4,8 +4,8 @@
     font-family: "Alegreya Sans";
     font-weight: 800;
     text-transform: uppercase;
-    padding: 15px 30px;
-    border-radius: 29px;
+    padding: 5% 10%;
+    border-radius: 50px;
     background-color: #ffffff;
 
     &:hover {
@@ -14,10 +14,21 @@
         background-color: #2e4e3f;
     }
 
+
 }
 
 .btn {
-    margin-bottom: rem(70px);
+    margin-bottom: 15%;
+
+    @include tablets {
+        text-align: center;
+        margin-bottom: 20%;
+    }
+
+    @include phones {
+        text-align: center;
+        margin-bottom: 20%;
+    }
 }
 
 .button {
@@ -27,7 +38,7 @@
     font-weight: 800;
     text-transform: uppercase;
     background: $green;
-    padding: 25px 40px;
+    padding: 5% 10%;
     border-radius: 50px;
 
     &--reset {

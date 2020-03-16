@@ -9,6 +9,7 @@
 }
 
 
+
 .feature__content {
     h2 {
         font-size: rem(27px);
@@ -18,9 +19,13 @@
         text-align: center;
         margin-bottom: rem(26px);
 
-        @include tablets {
+        @include phones {
             text-align: left;
         }
+    }
+
+    @include phones {
+        width: 76%;
     }
 }
 
@@ -31,7 +36,7 @@
     font-weight: 300;
     text-align: center;
 
-    @include tablets {
+    @include phones {
         text-align: left;
     }
 
@@ -39,8 +44,8 @@
 
 
 .feature__img {
-    width: 125px;
-    height: 125px;
+    width: rem(125px);
+    height: rem(125px);
     border-radius: 50%;
     background-color: #f2f5f4;
     overflow: hidden;
@@ -48,6 +53,12 @@
     justify-content: center;
     align-items: center;
     margin-bottom: rem(30px);
+
+    @include phones {
+        margin-bottom: rem(0px);
+        margin-right: 10px;
+    }
+
 }
 
 .feature__img-pic {
@@ -55,12 +66,17 @@
     max-width: 80px;
     max-height: 70px;
     fill: #2e2e2d;
-    ;
+
 }
 
+.feature__item-slim {
+    @include tablets {
+        display: none;
+    }
+}
 
 .feature__circle {
-    margin-top: 50px;
+    margin-top: 263%;
     display: flex;
     width: 100%;
     justify-content: center;
