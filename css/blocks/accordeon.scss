@@ -35,10 +35,6 @@
         margin-bottom: 0;
     }
 
-    @include phones {
-        height: 0;
-    }
-
 }
 
 .accordeon__img-pic {
@@ -62,8 +58,6 @@
     .accordeon__img {
         @include tablets {
             height: 290px;
-
-
         }
     }
 }

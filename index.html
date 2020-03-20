@@ -6,7 +6,7 @@
     <title>CHOCCO</title>
     <link rel="stylesheet" href="css/main.css" />
   </head>
-
+<body>
   <div>
     <div class="wrapper">
 
@@ -15,8 +15,7 @@
           <div class="header">
             <div class="logo">
               <a href="№" class="header__logo">
-                <img src="icons/logo.png" alt="CHOCCO. Натуральные шоколадные
-                батончики class="logo__img" />
+                <img src="icons/logo.png" alt="CHOCCO. Натуральные шоколадные батончики class="logo__img" />
               </a>
             </div>
             <nav class="nav">
@@ -55,11 +54,12 @@
             </div>
             <div class="hamburger"></div>
           </div>
+         
           <div class="hero__content">
             <div class="hero__main">
               <div class="hero__text">
                 <div
-                  class="section__title section__title--margin--bottom-small section__title--special--firstscreen"
+                  class="section__title section__title--margin--bottom-small section__title--special--firstscreen section__title--color--white"
                 >
                   <h1>натуральные шоколадные батончики</h1>
                 </div>
@@ -105,6 +105,37 @@
               <img src="img/hero-bat.png" alt="Батончики" class="hero__img-pic">
             </div>
           </div>
+        </div>
+
+        <div class="hamburger-menu">
+          <div class="hamburger-container">
+            <ul class="nav__list hamburger__list hamburger__list--font--size--large ">
+              <li class="nav__item">
+                <a href="#" class="nav__link">О нас</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Батончики</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Команда</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Меню</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Отзывы</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Как мы работаем</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Контакты</a>
+              </li>
+            </ul>
+            <svg class="hamburger-menu__close">
+              <use xlink:href="./sprite.svg#close"></use>
+            </svg> 
+          </div>     
         </div>
       </section>
 
@@ -179,7 +210,10 @@
               </div>
             </li>
           </ul>
+        </div>
       </section>
+
+
 
       <section class="section team">
         <div class="container team__container">
@@ -192,7 +226,7 @@
                 <div class="accordeon__img">
                   <img
                     src="img//team-1.jpg"
-                    alt=""
+                    alt="Фото сотрудника"
                     class="accordeon__img-pic"
                   />
                 </div>
@@ -206,7 +240,7 @@
               </li>
               <li class="accordeon__item">
                 <div class="accordeon__img">
-                  <img src="img/team-2.jpg" alt="" class="accordeon__img-pic" />
+                  <img src="img/team-2.jpg" alt="Фото сотрудника" class="accordeon__img-pic" />
                 </div>
                 <div class="accordeon__title">
                   <h2>Кирилл Матросов</h2>
@@ -218,7 +252,7 @@
               </li>
               <li class="accordeon__item ">
                 <div class="accordeon__img">
-                  <img src="img/team-3.jpg" alt="" class="accordeon__img-pic" />
+                  <img src="img/team-3.jpg" alt="Фото сотрудника" class="accordeon__img-pic" />
                 </div>
                 <div class="accordeon__title">
                   <h2>Кирилл Матросов</h2>
@@ -230,7 +264,7 @@
               </li>
               <li class="accordeon__item accordeon--visible">
                 <div class="accordeon__img">
-                  <img src="img/team-4.jpg" alt="" class="accordeon__img-pic" />
+                  <img src="img/team-4.jpg" alt="Фото сотрудника" class="accordeon__img-pic" />
                 </div>
                 <div class="accordeon__title">
                   <h2>Кирилл Матросов</h2>
@@ -247,37 +281,21 @@
 
       <section class="section menu">
         <div class="menu__bg-color">
-          <div class="container menu-container">
+          <div class="menu-container">
             <div class="menu__title">
-              <h2>Меню</h2>
+              <div class="section__title section__title--color--white">
+                <h1>Меню</h1>
+              </div>
             </div>
             <div class="menu__accordeon">
               <ul class="menu__list">
                 <li class="menu__item">
-                  <div class="menu__hover menu__hover--active">
-                    <div class="menu__item-title menu__item-title--bg--1">
-                      <h3>Батончики с молоком</h3>
-                    </div>
-                    <article class="menu__hover-text">
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Accusamus, fuga praesentium? Dolor sequi culpa
-                        necessitatibus quibusdam qui illum deleniti, voluptatem
-                        dolores debitis facilis, ut aperiam eveniet libero?
-                        Consequuntur, obcaecati magni.
-                      </p>
-                    </article>
-                  </div>
-                  <div class="menu__item-title menu__item-title--bg--1">
+                  <div class="menu__item-title menu__item-title--bg--1 menu__item-title--bg-color">
                     <h3>Батончики с молоком</h3>
-                  </div>
-                </li>
-                <li class="menu__item">
-                  <div class="menu__hover">
-                    <div class="menu__item-title menu__item-title--bg--2">
-                      <h3>с мёдом и фруктами</h3>
-                    </div>
-                    <article class="menu__hover-text">
+                  </div>                   
+                  <div class="menu__description menu__description--active">               
+                    <!-- menu__description--active -->
+                    <article class="menu__description-text">
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Accusamus, fuga praesentium? Dolor sequi culpa
@@ -286,17 +304,17 @@
                         Consequuntur, obcaecati magni.
                       </p>
                     </article>
-                  </div>
-                  <div class="menu__item-title menu__item-title--bg--2">
-                    <h3>с мёдом и фруктами</h3>
-                  </div>
+                    <svg class="close">
+                      <use xlink:href="./sprite.svg#close"></use>
+                    </svg>
+                  </div> 
                 </li>
-                <li class="menu__item">
-                  <div class="menu__hover">
-                    <div class="menu__item-title menu__item-title--bg--3">
-                      <h3>С дикими ягодами</h3>
-                    </div>
-                    <article class="menu__hover-text">
+                <li class="menu__item" >
+                  <div class="menu__item-title menu__item-title--bg--2 menu__item-title--bg-color">
+                    <h3>С мёдом и фруктами</h3>
+                  </div>                   
+                  <div class="menu__description">               
+                    <article class="menu__description-text">
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Accusamus, fuga praesentium? Dolor sequi culpa
@@ -305,16 +323,35 @@
                         Consequuntur, obcaecati magni.
                       </p>
                     </article>
-                  </div>
-                  <div class="menu__item-title menu__item-title--bg--3">
-                    <h3>С дикими ягодами</h3>
-                  </div>
+                    <svg class="close">
+                      <use xlink:href="./sprite.svg#close"></use>
+                    </svg>
+                  </div> 
                 </li>
+                <li class="menu__item" >
+                  <div class="menu__item-title menu__item-title--bg--3 menu__item-title--bg-color">
+                    <h3>Дикие ягоды</h3>
+                  </div>                   
+                  <div class="menu__description">               
+                    <article class="menu__description-text">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Accusamus, fuga praesentium? Dolor sequi culpa
+                        necessitatibus quibusdam qui illum deleniti, voluptatem
+                        dolores debitis facilis, ut aperiam eveniet libero?
+                        Consequuntur, obcaecati magni.
+                      </p>
+                    </article>
+                    <svg class="close">
+                      <use xlink:href="./sprite.svg#close"></use>
+                    </svg>
+                  </div> 
+                </li>
+                
               </ul>
             </div>
           </div>
-        </div>
-      
+        </div>    
       </section>
 
       <section class="section reviews-section">
@@ -326,7 +363,7 @@
           <div class="reviews">
             <div class="rewiews__card">
               <div class="rewiews__card-img">
-                <img src="img/reviews-1.jpg" alt="" class="reviews__card-pic" />
+                <img src="img/reviews-1.jpg" alt="Фото автора отзыва" class="reviews__card-pic" />
               </div>
               <div class="rewiews__card-content">
                 <h3>Лучший перекус</h3>
@@ -343,7 +380,7 @@
               </div>
               <img
                 src="img/reviews-card-decor.png"
-                alt=""
+                alt="Фото автора отзыва""
                 class="reviews__card-berries"
               />
             </div>
@@ -353,7 +390,7 @@
                   <div class="reviews__icons-img">
                     <img
                       src="img/reviews-1.jpg"
-                      alt=""
+                      alt="Фото автора отзыва""
                       class="reviews__icons-pic"
                     />
                   </div>
@@ -362,7 +399,7 @@
                   <div class="reviews__icons-img">
                     <img
                       src="img/reviews-2.jpg"
-                      alt=""
+                      alt="Фото автора отзыва""
                       class="reviews__icons-pic"
                     />
                   </div>
@@ -371,7 +408,7 @@
                   <div class="reviews__icons-img">
                     <img
                       src="img/reviews-3.jpg"
-                      alt=""
+                      alt="Фото автора отзыва""
                       class="reviews__icons-pic"
                     />
                   </div>
@@ -508,7 +545,41 @@
           </div>
         </footer>
       </section>
-
     </div>
+    <script>
+//       const menuItemList = document.querySelectorAll('.menu__item');
+//       const menuActiveList = document.querySelectorAll(".menu__description");
+//       const cross = document.querySelector('.menu__description-text',':after');
+
+//       var vvOpen = document.querySelectorAll('.menu__item-title');
+// vvOpen.forEach(function(n) {
+//   n.onclick = function(){
+    
+//     var child = n.parentNode.querySelector('.menu__description');
+//     console.log(child.classList);
+//     var a=child.classList;
+
+//     if (child.style.display != 'block') {
+//   	  child.style.display = 'block';
+//     } else {
+//   	  child.style.display = 'none';
+//     }
+//   };
+// })
+
+const hamburgerOpen=document.querySelector('.hamburger');
+var hamburgerMenu=document.querySelector('.hamburger-menu');
+hamburgerOpen.addEventListener('click', function(){
+  hamburgerMenu.style.display='block';
+  
+});
+const hamburgerClose=document.querySelector('.hamburger-menu__close');
+hamburgerMenu=document.querySelector('.hamburger-menu');
+hamburgerClose.addEventListener('click', function(){
+  hamburgerMenu.style.display='none';
+  
+});
+
+    </script>
   </body>
 </html>
