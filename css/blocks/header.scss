@@ -3,8 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 5px;
-    margin-bottom: rem(65px);
+    padding: 5% 0%;
+    // margin-bottom: rem(65px);
 
     @include tablets {
         margin-bottom: 0%;

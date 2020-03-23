@@ -15,6 +15,11 @@
 .footer__phone {
     display: flex;
     align-items: center;
+
+    @include phones {
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 .phone-icon {

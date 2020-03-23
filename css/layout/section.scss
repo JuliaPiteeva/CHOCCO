@@ -2,9 +2,6 @@
     height: 100vh;
     min-height: rem(650px);
 
-
-
-
     &--align--top {
         justify-content: flex-start;
     }
@@ -12,19 +9,25 @@
 
 
 .section__title {
-    margin-top: rem(50px);
-    margin-bottom: rem(50px);
+    margin-top: rem(40px);
+    margin-bottom: rem(40px);
     line-height: 1;
     text-align: center;
     color: #000;
-
-
+    font-size: rem(48px);
+    font-family: "Alegreya Sans";
+    font-weight: 700;
+    text-transform: uppercase;
 
     h1 {
         font-size: rem(48px);
         font-family: "Alegreya Sans";
         font-weight: 700;
         text-transform: uppercase;
+    }
+
+    &--left {
+        text-align: left;
     }
 
     &--color--white {
@@ -39,12 +42,7 @@
         text-align: left;
 
         @include tablets {
-            text-align: center;
-            letter-spacing: 0px;
-            margin-top: rem(-40px);
-        }
-
-        @include phones {
+            margin-top: 0;
             text-align: center;
             letter-spacing: 0px;
         }
@@ -53,32 +51,46 @@
     &--color--green {
         color: $green;
     }
+
+    &--margin--bottom-small {
+        margin-bottom: rem(20px);
+    }
+
+    &--font-size-small {
+        font-size: rem(36px);
+
+        @include tablets {
+            text-align: center;
+        }
+    }
+
+    @include phones {
+        font-size: rem(40px);
+    }
 }
 
 
-
-.section__title--margin--bottom-small {
-    margin-bottom: rem(20px);
-}
 
 .hero {
     background: url("../../img/hero-list.png") center center / cover no-repeat;
     background-color: #86c3d7;
-    padding-bottom: 30px;
+    padding-bottom: rem(30px);
     position: relative;
 
     @include tablets {
         background: url("../../img/hero-768.png") center center / cover no-repeat;
         background-color: #86c3d7;
-        margin-bottom: 100px;
-
     }
 }
 
-.menu {
-    background: url("../img/menu-bg.jpg") center center / cover no-repeat;
-    position: relative;
+.slider-section {
+    background-color: #f8faf9;
+}
 
+.menu {
+    background: url("../img/menu-bg.jpg") 50% no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 .team {}
@@ -89,8 +101,6 @@
 
 .order-section {
     background: url("../img/order-bg.jpg") center center / cover no-repeat;
-    // position: relative;
-
 
 }
 

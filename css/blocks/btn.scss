@@ -4,30 +4,43 @@
     font-family: "Alegreya Sans";
     font-weight: 800;
     text-transform: uppercase;
-    padding: 5% 10%;
+    padding: 5% 9%;
     border-radius: 50px;
     background-color: #ffffff;
 
     &:hover {
         color: #fff;
         filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.15));
-        background-color: #2e4e3f;
+        background-color: $dark-green;
     }
 
+    &--bg-green {
+        background-color: $green;
+    }
 
+    &--padding--large {
+        padding: 20% 35%;
+    }
+
+    &--color--white {
+        color: $white;
+    }
 }
 
 .btn {
-    margin-bottom: 15%;
+    &--margin-bottom {
+        margin-bottom: rem(65px);
+    }
+
 
     @include tablets {
         text-align: center;
-        margin-bottom: 20%;
+
     }
 
     @include phones {
         text-align: center;
-        margin-bottom: 20%;
+
     }
 }
 

@@ -56,15 +56,15 @@
 
     @include phones {
         margin-bottom: rem(0px);
-        margin-right: 10px;
+        margin-right: rem(10px);
     }
 
 }
 
 .feature__img-pic {
     display: block;
-    max-width: 80px;
-    max-height: 70px;
+    max-width: rem(80px);
+    max-height: rem(70px);
     fill: #2e2e2d;
 
 }

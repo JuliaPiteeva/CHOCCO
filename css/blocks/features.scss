@@ -6,16 +6,14 @@
     position: relative;
 
     &:before {
-    display: block;
-    width: 148px;
-    height: 220px;
-    content: "";
-    position: absolute;
-    background: url("../../img/features-raspberries.png") center center / contain no-repeat;
-    top: 100%;
-    left: 0%;
-    right: 0%;
-    bottom: 0%;
+        display: block;
+        max-width: rem(148px);
+        max-height: rem(220px);
+        content: "";
+        position: absolute;
+        background: url("../img/features-raspberries.png") center center / contain no-repeat;
+        left: 0%;
+        bottom: 0%;
 
         @include phones {
             display: none;
@@ -34,12 +32,10 @@
     margin-bottom: rem(60px);
 
     @include tablets {
-        padding: 1% 17%;
+        padding: 0 10%;
     }
 
-    @include phones {
-        padding: 0 0%;
-    }
+    @include phones {}
 }
 
 .features__list {

@@ -1,5 +1,7 @@
 .order-container {
     position: relative;
+    display: flex;
+
 
     &:before {
         display: block;
@@ -25,7 +27,7 @@
         position: absolute;
         background: url("../img/order-section-leaf.png") center center / contain no-repeat;
         top: 61%;
-        right: 0%;
+        right: -8%;
 
         @include tablets {
             display: none;
@@ -36,7 +38,7 @@
 
 .order {
     display: flex;
-    margin-bottom: rem(60px);
+    margin-bottom: rem(160px);
 
     @include tablets {
         flex-direction: column;
@@ -107,7 +109,7 @@
         resize: vertical;
 
         @include phones {
-            max-height: 80px;
+            max-height: rem(80px);
         }
 
     }
@@ -168,11 +170,11 @@
 
 .input__visible {
     position: relative;
-    width: 25px;
-    height: 25px;
+    width: rem(25px);
+    height: rem(25px);
     border-radius: 50%;
     background: #ffffff;
-    margin-right: 10px;
+    margin-right: rem(10px);
 }
 
 .switch-controls__checkbox {
@@ -198,11 +200,11 @@
 
 .input__visible-checkbox {
     position: relative;
-    width: 26px;
-    height: 26px;
+    width: rem(26px);
+    height: rem(26px);
     border-radius: 1px;
     background: #fff;
-    margin-right: 10px;
+    margin-right: rem(10px);
 }
 
 .order__buttons {

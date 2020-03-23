@@ -1,0 +1,119 @@
+.slider-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+
+    &::after {
+        display: block;
+        width: 180px;
+        height: 430px;
+        content: "";
+        position: absolute;
+        background: url("../../img/slider-berries.png") center center / contain no-repeat;
+        right: -6%;
+        bottom: -37%;
+
+        @include phones {
+            width: 125px;
+            height: 350px;
+        }
+    }
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.slider-content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    @include tablets {
+        flex-direction: column;
+
+    }
+}
+
+.left,
+.right {
+    display: flex;
+    align-items: center;
+
+    @include tablets {
+        align-items: flex-start;
+        margin-top: 30%;
+    }
+
+}
+
+
+.right__link {
+    display: block;
+}
+
+.left__icon {
+    fill: #141414;
+    width: rem(15px);
+    height: rem(30px);
+}
+
+.right__icon {
+    fill: #141414;
+    width: rem(15px);
+    height: rem(30px);
+}
+
+
+.slider-col-left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    &:before {
+        content: " ";
+        position: absolute;
+        display: block;
+        width: 65px;
+        height: 75px;
+        border-radius: 50%;
+        left: 0%;
+        top: 30%;
+        background: url('../img/slider-leaf-2.png') center center / cover no-repeat;
+    }
+
+    &:after {
+        content: " ";
+        position: absolute;
+        display: block;
+        width: 115px;
+        height: 80px;
+        bottom: 11%;
+        right: 12%;
+        background: url('../img/slider-leaf.png') center center / cover no-repeat;
+    }
+
+    @include tablets {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.slider-col-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include tablets {
+        width: 100%;
+    }
+}
+
+.bar__nutrition {
+    margin-top: 10%;
+}

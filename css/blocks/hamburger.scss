@@ -1,3 +1,15 @@
+.hamburger-link {
+    width: 25px;
+    height: 25px;
+    z-index: -10;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+
+    @include tablets {
+        z-index: 10;
+    }
+}
 
 .hamburger {
     width: 24px;
@@ -7,8 +19,7 @@
     position: relative;
     margin-bottom: 5px;
     margin-top: 5px;
-    z-index: -10;
-    cursor: pointer;
+
 
     &:before {
         display: block;
@@ -32,7 +43,5 @@
         bottom: 9px;
     }
 
-    @include tablets {
-        z-index: 10;
-    }
+
 }

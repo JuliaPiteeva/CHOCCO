@@ -18,14 +18,14 @@
 
     @include tablets {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: rem(20px);
     }
 
 }
 
 .accordeon__img {
-    width: 220px;
-    height: 290px;
+    width: rem(220px);
+    height: rem(290px);
     overflow: hidden;
     margin-bottom: 1.56rem;
 
@@ -57,14 +57,14 @@
 
     .accordeon__img {
         @include tablets {
-            height: 290px;
+            height: rem(290px);
         }
     }
 }
 
 .accordeon__title {
     display: flex;
-    align-items: baseline;
+    align-items: center;
 
     h2 {
         font-size: 1.31rem;
@@ -99,10 +99,6 @@
     text-align: center;
     font-size: 1.12rem;
 
-    @include tablets {
-        padding: 0 30%;
-    }
-
     h3 {
         color: #000000;
         font-family: "Alegreya Sans";
@@ -118,5 +114,10 @@
 
     @include tablets {
         order: 2;
+        padding: 0 30%;
+    }
+
+    @include phones {
+        padding: 0 20%;
     }
 }

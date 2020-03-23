@@ -1,0 +1,78 @@
+.bar__nutrition {
+    &:hover {
+        .nutrition {
+            display: block;
+        }
+    }
+}
+
+.bar__nutrition-link {
+    min-width: rem(100px);
+    min-height: rem(100px);
+    display: flex;
+    border-radius: 5px;
+    background-color: #60aacc;
+    padding: 2% 2%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    p {
+        font-size: rem(14px);
+        color: #ffffff;
+        font-family: "Alegreya Sans";
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+
+.bar__nutrition-icon {
+    max-width: rem(70px);
+    max-height: rem(55px);
+    fill: $white;
+    margin-bottom: 5px;
+}
+
+.nutrition {
+    display: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9490196078431372);
+    border: 1px solid #eeeeee;
+    position: absolute;
+    left: 61%;
+    min-width: rem(270px);
+}
+
+
+
+.nutrition__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20%
+}
+
+
+.nutrition__icon-pic {
+    max-width: rem(50px);
+    max-height: rem(50px);
+}
+
+.nutrition__name {
+    text-align: left;
+    font-size: rem(16px);
+    color: #333537;
+    font-family: "Alegreya Sans";
+    font-weight: 500;
+
+}
+
+.nutrition__amount {
+    text-align: right;
+    font-size: rem(16px);
+    color: #333537;
+    font-family: "Alegreya Sans";
+    font-weight: 400;
+    padding: 0 10%;
+}
