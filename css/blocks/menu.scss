@@ -70,11 +70,17 @@
 
     &--active {
         width: rem(300px);
-
-        .menu__desc-text {
-            display: block;
-        }
     }
+
+    // .menu__desc-text {
+    //     display: block;
+    // }
+
+    // @include phones {
+    //     width: 100%;
+    //     position: absolute;
+    // }
+}
 
 }
 
@@ -84,7 +90,7 @@
     padding: rem(60px) rem(30px);
     width: 100%;
     line-height: 1.8;
-    display: none;
+    display: block;
     position: relative;
 
     @include phones {
@@ -99,6 +105,7 @@
     width: rem(20px);
     height: rem(20px);
     fill: #c3c3c4;
+    margin: rem(10px) rem(10px);
 }
 
 

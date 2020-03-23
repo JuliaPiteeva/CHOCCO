@@ -1701,8 +1701,6 @@ textarea {
   overflow: hidden; }
   .menu__desc-content--active {
     width: 18.75rem; }
-    .menu__desc-content--active .menu__desc-text {
-      display: block; }
 
 .menu__desc-text {
   font-size: 0.875rem;
@@ -1710,7 +1708,7 @@ textarea {
   padding: 3.75rem 1.875rem;
   width: 100%;
   line-height: 1.8;
-  display: none;
+  display: block;
   position: relative; }
   @media screen and (max-width: 480px) {
     .menu__desc-text {
@@ -1722,7 +1720,8 @@ textarea {
   top: 3%;
   width: 1.25rem;
   height: 1.25rem;
-  fill: #c3c3c4; }
+  fill: #c3c3c4;
+  margin: 0.625rem 0.625rem; }
 
 .order-container {
   position: relative;
