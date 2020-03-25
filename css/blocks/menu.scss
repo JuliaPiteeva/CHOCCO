@@ -19,7 +19,9 @@
     right: 0;
     top: 0;
     bottom: 0;
+
     // @extend %clearfix;
+    @include phones {}
 }
 
 .menu__item {
@@ -70,17 +72,16 @@
 
     &--active {
         width: rem(300px);
+
     }
-
-    // .menu__desc-text {
-    //     display: block;
-    // }
-
-    // @include phones {
-    //     width: 100%;
-    //     position: absolute;
-    // }
 }
+
+// .menu__desc-text {
+//     display: block;
+// }
+
+
+
 
 
 .menu__desc-text {

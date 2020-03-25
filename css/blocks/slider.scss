@@ -81,6 +81,10 @@
         right: 12%;
         background: url('../img/slider-leaf.png') center center / cover no-repeat;
     }
+
+    @include tablets {
+        width: 100%;
+    }
 }
 
 .slider-col-right {

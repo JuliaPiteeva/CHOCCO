@@ -9,6 +9,14 @@
     &--align--top {
         justify-content: flex-start;
     }
+
+    @media tablets {
+        min-height: rem(1000px);
+    }
+
+    @media phones {
+        min-height: rem(800px);
+    }
 }
 
 

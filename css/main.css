@@ -328,6 +328,12 @@ template {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start; }
+  @media tablets {
+    .section {
+      min-height: 62.5rem; } }
+  @media phones {
+    .section {
+      min-height: 50rem; } }
 
 .hero {
   background: url("../../img/hero-list.png") center center/cover no-repeat;
@@ -784,9 +790,6 @@ textarea {
     .hero__text {
       padding-top: 0rem; } }
 
-.hero-right-col {
-  width: 50%; }
-
 .hero__img {
   width: 100%;
   display: block;
@@ -1205,6 +1208,9 @@ textarea {
     bottom: 11%;
     right: 12%;
     background: url("../img/slider-leaf.png") center center/cover no-repeat; }
+  @media screen and (max-width: 768px) {
+    .slider-col-left {
+      width: 100%; } }
 
 .slider-col-right {
   width: 50%;
