@@ -1,19 +1,10 @@
 .bar__img {
     display: block;
+    width: 100%;
     object-fit: contain;
 
 }
 
-.bar__nutrition {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-bottom: rem(30px);
-
-    @include tablets {
-        display: none;
-    }
-}
 
 .bar__title {
     font-size: rem(36px);

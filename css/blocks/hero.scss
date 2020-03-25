@@ -1,103 +1,75 @@
 .hero__container {
     display: flex;
     flex-direction: column;
+    // align-items: center;
     height: 100%;
-    position: relative;
-
-
-    &:before {
-        display: block;
-        width: 80px;
-        height: 108px;
-        content: "";
-        position: absolute;
-        background: url("../img/hero-berries-2.png") center center / contain no-repeat;
-        bottom: -9%;
-        left: -5%;
-
-        @include tablets {
-            display: none;
-        }
-    }
-
-    &:after {
-        display: block;
-        width: 328px;
-        height: 149px;
-        content: "";
-        position: absolute;
-        background: url("../img/hero-berries-1.png") center center / contain no-repeat;
-        bottom: -12%;
-        right: 0%;
-
-        @include tablets {
-            display: none;
-        }
-    }
-
+    color: #ffffff;
+    font-family: "Alegreya Sans";
 }
 
 
 .hero__content {
     display: flex;
-    justify-content: flex-start;
-
+    align-items: center;
+    flex: .8;
 
     @include tablets {
         flex-direction: column-reverse;
+        justify-content: center;
     }
 }
 
-.hero-wrapper {
+.hero-left-col {
     width: 50%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     @include tablets {
         width: 100%;
     }
-
 }
 
-.hero__text {}
+.hero__text {
+    padding-top: rem(60px);
+    margin-bottom: rem(65px);
+
+    @include tablets {
+        padding-top: rem(0px);
+    }
+}
+
+.hero-right-col {
+    width: 50%;
+}
 
 .hero__img {
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-
-    @include tablets {
-        min-height: 308px;
-        background: url("../img/hero-adaptiv-img.png") center center / contain no-repeat;
-        width: 100%;
-    }
-
-    @include phones {
-        min-height: 245px;
-        background: url("../img/hero-adaptiv-img.png") center center / contain no-repeat;
-    }
-
-}
-
-.hero__img-pic {
     width: 100%;
     display: block;
-    object-fit: contain;
+    object-fit: cover;
 
     @include tablets {
-        width: 0;
+        display: none;
+    }
+}
+
+.hero__img-adaptiv {
+    width: 100%;
+    display: none;
+    object-fit: cover;
+
+    @include tablets {
+        display: block;
     }
 }
 
 .hero__disc {
-    margin-bottom: rem(60px);
+    margin-bottom: rem(20px);
+    padding-right: 20%;
 
 
     p {
         font-size: rem(21px);
-        color: #ffffff;
-        font-family: "Alegreya Sans";
         font-weight: 400;
 
         @include phones {
@@ -151,8 +123,6 @@
 
 .hero__icons-text {
     font-size: rem(16px);
-    color: #ffffff;
-    font-family: "Alegreya Sans";
     font-weight: 400;
 
 }

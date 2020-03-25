@@ -1,10 +1,11 @@
 .btn__link {
+    display: inline-block;
     font-size: rem(19px);
     color: #365a49;
     font-family: "Alegreya Sans";
     font-weight: 800;
     text-transform: uppercase;
-    padding: 5% 9%;
+    padding: 20px 37px;
     border-radius: 50px;
     background-color: #ffffff;
 
@@ -18,20 +19,12 @@
         background-color: $green;
     }
 
-    &--padding--large {
-        padding: 20% 35%;
-    }
-
     &--color--white {
         color: $white;
     }
 }
 
 .btn {
-    &--margin-bottom {
-        margin-bottom: rem(65px);
-    }
-
 
     @include tablets {
         text-align: center;

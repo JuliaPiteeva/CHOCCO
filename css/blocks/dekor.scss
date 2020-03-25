@@ -1,0 +1,153 @@
+.hero {
+
+    position: relative;
+&:before {
+    display: block;
+    width: 80px;
+    height: 108px;
+    content: "";
+    position: absolute;
+    background: url("../img/hero-berries-2.png") center center / contain no-repeat;
+    bottom: -6%;
+    left: 2%;
+
+    @include tablets {
+        display: none;
+    }
+}
+
+&:after {
+    display: block;
+    width: 328px;
+    height: 149px;
+    content: "";
+    position: absolute;
+    background: url("../img/hero-berries-1.png") center center / contain no-repeat;
+    bottom: -9%;
+    right: 9%;
+
+    @include tablets {
+        display: none;
+    }
+}
+}
+
+.features {
+    position: relative;
+
+    &:before {
+        display: block;
+        max-width: 148px;
+        max-height: 220px;
+        content: "";
+        position: absolute;
+        background: url("../img/features-raspberries.png") center center / contain no-repeat;
+        right: 0%;
+        bottom: 0%;
+    }
+
+}
+
+.slider-section {
+    position: relative;
+
+    &::after {
+        display: block;
+        width: 180px;
+        height: 430px;
+        content: "";
+        position: absolute;
+        background: url("../img/slider-berries.png") center center / contain no-repeat;
+        right: 0%;
+        bottom: -24%;
+
+        @include phones {
+            width: 125px;
+            height: 350px;
+        }
+    }
+}
+
+.team {
+    position: relative;
+
+    &:before {
+        display: block;
+        width: 155px;
+        height: 127px;
+        content: "";
+        position: absolute;
+        background: url("../img/team-berry.png") center center / contain no-repeat;
+        left: 0%;
+        bottom: -8%;
+        z-index: 20;
+
+        @include tablets {
+            top: 80%;
+        }
+    }
+}
+
+.reviews-section {
+    position: relative;
+
+    &:before {
+        display: block;
+        width: 148px;
+        height: 322px;
+        content: "";
+        position: absolute;
+        background: url("../img/reviews-berries-part.png") center center / contain no-repeat;
+        left: 0%;
+        bottom: -19%;
+        z-index: 10;
+    }
+
+    &:after {
+        display: block;
+        width: 148px;
+        height: 322px;
+        content: "";
+        position: absolute;
+        background: url("../img/reviews-berries-part-2.png") center center / contain no-repeat;
+        top: -14%;
+        right: 0%;
+
+    }
+}
+
+.order-section {
+    position: relative;
+
+    &:before {
+        display: block;
+        width: 50px;
+        height: 50px;
+        content: "";
+        position: absolute;
+        background: url("../img/order-section-berry.png") center center / contain no-repeat;
+        bottom: 7%;
+        left: 12%;
+
+        @include tablets {
+            display: none;
+        }
+
+    }
+
+    &:after {
+        display: block;
+        width: 172px;
+        height: 197px;
+        content: "";
+        position: absolute;
+        background: url("../img/order-section-leaf.png") center center / contain no-repeat;
+        bottom: 0%;
+        right: 10%;
+
+        @include tablets {
+            display: none;
+        }
+
+    }
+}

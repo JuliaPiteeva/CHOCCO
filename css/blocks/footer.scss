@@ -1,13 +1,12 @@
 .footer {
     position: absolute;
-    left: 0;
-    bottom: 0;
+    bottom: 0%;
     width: 100%;
     min-height: 80px;
     background-color: #ffffff;
 
     @include phones {
-        min-height: 150px
+        // min-height: 150px
     }
 }
 

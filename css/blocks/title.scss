@@ -1,0 +1,36 @@
+.section__title {
+    margin-bottom: rem(30px);
+
+    h1 {
+        line-height: 1.2;
+        text-align: center;
+        color: #000;
+        font-size: rem(48px);
+        font-family: "Alegreya Sans";
+        font-weight: 700;
+        text-transform: uppercase;
+
+    }
+
+    &--left h1 {
+        text-align: left;
+
+        @include tablets {
+            text-align: center;
+        }
+    }
+
+    &--color--white h1 {
+        color: white;
+        margin-bottom: 0;
+    }
+
+    &--color--green h1 {
+        color: $green;
+    }
+
+    @include tablets {
+        font-size: rem(40px);
+        text-align: center;
+    }
+}

@@ -309,6 +309,19 @@ template {
   display: none; }
 
 .section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 100vh;
   min-height: 40.625rem; }
   .section--align--top {
@@ -316,58 +329,14 @@ template {
     -ms-flex-pack: start;
     justify-content: flex-start; }
 
-.section__title {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-  line-height: 1;
-  text-align: center;
-  color: #000;
-  font-size: 3rem;
-  font-family: "Alegreya Sans";
-  font-weight: 700;
-  text-transform: uppercase; }
-  .section__title h1 {
-    font-size: 3rem;
-    font-family: "Alegreya Sans";
-    font-weight: 700;
-    text-transform: uppercase; }
-  .section__title--left {
-    text-align: left; }
-  .section__title--color--white {
-    color: white; }
-  .section__title--special--firstscreen h1 {
-    margin-top: 3.125rem;
-    letter-spacing: 4px;
-    font-size: 3.3125rem;
-    line-height: 1.1;
-    text-align: left; }
-    @media screen and (max-width: 768px) {
-      .section__title--special--firstscreen h1 {
-        margin-top: 0;
-        text-align: center;
-        letter-spacing: 0px; } }
-  .section__title--color--green {
-    color: #365a49; }
-  .section__title--margin--bottom-small {
-    margin-bottom: 1.25rem; }
-  .section__title--font-size-small {
-    font-size: 2.25rem; }
-    @media screen and (max-width: 768px) {
-      .section__title--font-size-small {
-        text-align: center; } }
-  @media screen and (max-width: 480px) {
-    .section__title {
-      font-size: 2.5rem; } }
-
 .hero {
   background: url("../../img/hero-list.png") center center/cover no-repeat;
-  background-color: #86c3d7;
-  padding-bottom: 1.875rem;
-  position: relative; }
-  @media screen and (max-width: 768px) {
-    .hero {
-      background: url("../../img/hero-768.png") center center/cover no-repeat;
-      background-color: #86c3d7; } }
+  background-color: #86c3d7; }
+
+.features {
+  background: url("../img/features-bg.jpg") center center/cover no-repeat;
+  position: relative;
+  z-index: -1; }
 
 .slider-section {
   background-color: #f8faf9; }
@@ -384,8 +353,7 @@ template {
   background: url("../img/order-bg.jpg") center center/cover no-repeat; }
 
 .map-section {
-  background: url("../img/map.jpg") center center/cover no-repeat;
-  padding-bottom: 5.625rem; }
+  position: relative; }
 
 html {
   font-size: 16px; }
@@ -421,7 +389,10 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .wrapper {
   position: relative;
@@ -473,8 +444,127 @@ textarea {
   -webkit-box-shadow: none;
   box-shadow: none; }
 
+.hero {
+  position: relative; }
+  .hero:before {
+    display: block;
+    width: 80px;
+    height: 108px;
+    content: "";
+    position: absolute;
+    background: url("../img/hero-berries-2.png") center center/contain no-repeat;
+    bottom: -6%;
+    left: 2%; }
+    @media screen and (max-width: 768px) {
+      .hero:before {
+        display: none; } }
+  .hero:after {
+    display: block;
+    width: 328px;
+    height: 149px;
+    content: "";
+    position: absolute;
+    background: url("../img/hero-berries-1.png") center center/contain no-repeat;
+    bottom: -9%;
+    right: 9%; }
+    @media screen and (max-width: 768px) {
+      .hero:after {
+        display: none; } }
+
+.features {
+  position: relative; }
+  .features:before {
+    display: block;
+    max-width: 148px;
+    max-height: 220px;
+    content: "";
+    position: absolute;
+    background: url("../img/features-raspberries.png") center center/contain no-repeat;
+    right: 0%;
+    bottom: 0%; }
+
+.slider-section {
+  position: relative; }
+  .slider-section::after {
+    display: block;
+    width: 180px;
+    height: 430px;
+    content: "";
+    position: absolute;
+    background: url("../img/slider-berries.png") center center/contain no-repeat;
+    right: 0%;
+    bottom: -24%; }
+    @media screen and (max-width: 480px) {
+      .slider-section::after {
+        width: 125px;
+        height: 350px; } }
+
+.team {
+  position: relative; }
+  .team:before {
+    display: block;
+    width: 155px;
+    height: 127px;
+    content: "";
+    position: absolute;
+    background: url("../img/team-berry.png") center center/contain no-repeat;
+    left: 0%;
+    bottom: -8%;
+    z-index: 20; }
+    @media screen and (max-width: 768px) {
+      .team:before {
+        top: 80%; } }
+
+.reviews-section {
+  position: relative; }
+  .reviews-section:before {
+    display: block;
+    width: 148px;
+    height: 322px;
+    content: "";
+    position: absolute;
+    background: url("../img/reviews-berries-part.png") center center/contain no-repeat;
+    left: 0%;
+    bottom: -19%;
+    z-index: 10; }
+  .reviews-section:after {
+    display: block;
+    width: 148px;
+    height: 322px;
+    content: "";
+    position: absolute;
+    background: url("../img/reviews-berries-part-2.png") center center/contain no-repeat;
+    top: -14%;
+    right: 0%; }
+
+.order-section {
+  position: relative; }
+  .order-section:before {
+    display: block;
+    width: 50px;
+    height: 50px;
+    content: "";
+    position: absolute;
+    background: url("../img/order-section-berry.png") center center/contain no-repeat;
+    bottom: 7%;
+    left: 12%; }
+    @media screen and (max-width: 768px) {
+      .order-section:before {
+        display: none; } }
+  .order-section:after {
+    display: block;
+    width: 172px;
+    height: 197px;
+    content: "";
+    position: absolute;
+    background: url("../img/order-section-leaf.png") center center/contain no-repeat;
+    bottom: 0%;
+    right: 10%; }
+    @media screen and (max-width: 768px) {
+      .order-section:after {
+        display: none; } }
+
 .header {
-  min-height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,14 +574,44 @@ textarea {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 5% 0%; }
-  @media screen and (max-width: 768px) {
-    .header {
-      margin-bottom: 0%; } }
+  width: 100%;
+  margin-top: 1.25rem; }
 
-@media screen and (max-width: 768px) {
-  .nav {
-    display: none; } }
+.header__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  @media screen and (max-width: 768px) {
+    .header__btns {
+      display: none; } }
+
+.section__title {
+  margin-bottom: 1.875rem; }
+  .section__title h1 {
+    line-height: 1.2;
+    text-align: center;
+    color: #000;
+    font-size: 3rem;
+    font-family: "Alegreya Sans";
+    font-weight: 700;
+    text-transform: uppercase; }
+  .section__title--left h1 {
+    text-align: left; }
+    @media screen and (max-width: 768px) {
+      .section__title--left h1 {
+        text-align: center; } }
+  .section__title--color--white h1 {
+    color: white;
+    margin-bottom: 0; }
+  .section__title--color--green h1 {
+    color: #365a49; }
+  @media screen and (max-width: 768px) {
+    .section__title {
+      font-size: 2.5rem;
+      text-align: center; } }
 
 .nav__list {
   display: -webkit-box;
@@ -500,9 +620,8 @@ textarea {
 
 .nav__item {
   margin-right: 1.25rem; }
-
-.nav__item:last-child {
-  margin-right: 0px; }
+  .nav__item:last-child {
+    margin-right: 0px; }
 
 .nav__link {
   font-size: 1.125rem;
@@ -619,47 +738,30 @@ textarea {
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
-  position: relative; }
-  .hero__container:before {
-    display: block;
-    width: 80px;
-    height: 108px;
-    content: "";
-    position: absolute;
-    background: url("../img/hero-berries-2.png") center center/contain no-repeat;
-    bottom: -9%;
-    left: -5%; }
-    @media screen and (max-width: 768px) {
-      .hero__container:before {
-        display: none; } }
-  .hero__container:after {
-    display: block;
-    width: 328px;
-    height: 149px;
-    content: "";
-    position: absolute;
-    background: url("../img/hero-berries-1.png") center center/contain no-repeat;
-    bottom: -12%;
-    right: 0%; }
-    @media screen and (max-width: 768px) {
-      .hero__container:after {
-        display: none; } }
+  color: #ffffff;
+  font-family: "Alegreya Sans"; }
 
 .hero__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start; }
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: .8;
+  -ms-flex: .8;
+  flex: .8; }
   @media screen and (max-width: 768px) {
     .hero__content {
       -webkit-box-orient: vertical;
       -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
-      flex-direction: column-reverse; } }
+      flex-direction: column-reverse;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
-.hero-wrapper {
+.hero-left-col {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -667,47 +769,47 @@ textarea {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
   @media screen and (max-width: 768px) {
-    .hero-wrapper {
+    .hero-left-col {
       width: 100%; } }
+
+.hero__text {
+  padding-top: 3.75rem;
+  margin-bottom: 4.0625rem; }
+  @media screen and (max-width: 768px) {
+    .hero__text {
+      padding-top: 0rem; } }
+
+.hero-right-col {
+  width: 50%; }
 
 .hero__img {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start; }
-  @media screen and (max-width: 768px) {
-    .hero__img {
-      min-height: 308px;
-      background: url("../img/hero-adaptiv-img.png") center center/contain no-repeat;
-      width: 100%; } }
-  @media screen and (max-width: 480px) {
-    .hero__img {
-      min-height: 245px;
-      background: url("../img/hero-adaptiv-img.png") center center/contain no-repeat; } }
-
-.hero__img-pic {
   width: 100%;
   display: block;
-  -o-object-fit: contain;
-  object-fit: contain; }
+  -o-object-fit: cover;
+  object-fit: cover; }
   @media screen and (max-width: 768px) {
-    .hero__img-pic {
-      width: 0; } }
+    .hero__img {
+      display: none; } }
+
+.hero__img-adaptiv {
+  width: 100%;
+  display: none;
+  -o-object-fit: cover;
+  object-fit: cover; }
+  @media screen and (max-width: 768px) {
+    .hero__img-adaptiv {
+      display: block; } }
 
 .hero__disc {
-  margin-bottom: 3.75rem; }
+  margin-bottom: 1.25rem;
+  padding-right: 20%; }
   .hero__disc p {
     font-size: 1.3125rem;
-    color: #ffffff;
-    font-family: "Alegreya Sans";
     font-weight: 400; }
     @media screen and (max-width: 480px) {
       .hero__disc p {
@@ -751,17 +853,16 @@ textarea {
 
 .hero__icons-text {
   font-size: 1rem;
-  color: #ffffff;
-  font-family: "Alegreya Sans";
   font-weight: 400; }
 
 .btn__link {
+  display: inline-block;
   font-size: 1.1875rem;
   color: #365a49;
   font-family: "Alegreya Sans";
   font-weight: 800;
   text-transform: uppercase;
-  padding: 5% 9%;
+  padding: 20px 37px;
   border-radius: 50px;
   background-color: #ffffff; }
   .btn__link:hover {
@@ -771,13 +872,8 @@ textarea {
     background-color: #2e4e3f; }
   .btn__link--bg-green {
     background-color: #365a49; }
-  .btn__link--padding--large {
-    padding: 20% 35%; }
   .btn__link--color--white {
     color: #fff; }
-
-.btn--margin-bottom {
-  margin-bottom: 4.0625rem; }
 
 @media screen and (max-width: 768px) {
   .btn {
@@ -856,24 +952,6 @@ textarea {
   color: #000000;
   font-family: "Alegreya Sans";
   font-weight: 400; }
-
-.features {
-  background: url("../img/features-bg.jpg") center center/cover no-repeat; }
-
-.features__container {
-  position: relative; }
-  .features__container:before {
-    display: block;
-    max-width: 9.25rem;
-    max-height: 13.75rem;
-    content: "";
-    position: absolute;
-    background: url("../img/features-raspberries.png") center center/contain no-repeat;
-    left: 0%;
-    bottom: 0%; }
-    @media screen and (max-width: 480px) {
-      .features__container:before {
-        display: none; } }
 
 .features__disc {
   font-size: 1.125rem;
@@ -1038,21 +1116,7 @@ textarea {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  text-align: center;
-  position: relative; }
-  .slider-container::after {
-    display: block;
-    width: 180px;
-    height: 430px;
-    content: "";
-    position: absolute;
-    background: url("../../img/slider-berries.png") center center/contain no-repeat;
-    right: -6%;
-    bottom: -37%; }
-    @media screen and (max-width: 480px) {
-      .slider-container::after {
-        width: 125px;
-        height: 350px; } }
+  text-align: center; }
 
 .slider {
   display: -webkit-box;
@@ -1076,7 +1140,13 @@ textarea {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
-      flex-direction: column; } }
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
 .left,
 .right {
@@ -1092,7 +1162,7 @@ textarea {
       -webkit-box-align: start;
       -ms-flex-align: start;
       align-items: flex-start;
-      margin-top: 30%; } }
+      margin-top: 17%; } }
 
 .right__link {
   display: block; }
@@ -1135,12 +1205,6 @@ textarea {
     bottom: 11%;
     right: 12%;
     background: url("../img/slider-leaf.png") center center/cover no-repeat; }
-  @media screen and (max-width: 768px) {
-    .slider-col-left {
-      width: 100%;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; } }
 
 .slider-col-right {
   width: 50%;
@@ -1159,10 +1223,21 @@ textarea {
       width: 100%; } }
 
 .bar__nutrition {
-  margin-top: 10%; }
-
-.bar__nutrition:hover .nutrition {
-  display: block; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-bottom: 1.875rem; }
+  @media screen and (max-width: 768px) {
+    .bar__nutrition {
+      display: none; } }
+  .bar__nutrition:hover .nutrition {
+    display: block; }
 
 .bar__nutrition-link {
   min-width: 6.25rem;
@@ -1239,23 +1314,9 @@ textarea {
 
 .bar__img {
   display: block;
+  width: 100%;
   -o-object-fit: contain;
   object-fit: contain; }
-
-.bar__nutrition {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  margin-bottom: 1.875rem; }
-  @media screen and (max-width: 768px) {
-    .bar__nutrition {
-      display: none; } }
 
 .bar__title {
   font-size: 2.25rem;
@@ -1340,29 +1401,6 @@ textarea {
 
 .bar__content-desc {
   margin-bottom: 1.875rem; }
-
-.reviews__container {
-  position: relative; }
-  .reviews__container:before {
-    display: block;
-    width: 148px;
-    height: 322px;
-    content: "";
-    position: absolute;
-    background: url("../img/reviews-berries-part.png") center center/contain no-repeat;
-    top: 73%;
-    left: -5%;
-    right: 0%;
-    bottom: 0%; }
-  .reviews__container:after {
-    display: block;
-    width: 148px;
-    height: 322px;
-    content: "";
-    position: absolute;
-    background: url("../img/reviews-berries-part-2.png") center center/contain no-repeat;
-    top: -13%;
-    right: -5%; }
 
 .reviews {
   display: -webkit-box;
@@ -1474,8 +1512,7 @@ textarea {
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  margin-bottom: 10%; }
+  justify-content: center; }
 
 .reviews__icons-item {
   margin-right: 0.625rem; }
@@ -1495,25 +1532,6 @@ textarea {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover; }
-
-.team__container {
-  position: relative;
-  margin-bottom: 4.375rem; }
-  .team__container:before {
-    display: block;
-    width: 155px;
-    height: 127px;
-    content: "";
-    position: absolute;
-    background: url("../img/team-berry.png") center center/contain no-repeat;
-    top: 100%;
-    left: 0%;
-    right: 0%;
-    bottom: 0%;
-    z-index: 20; }
-    @media screen and (max-width: 768px) {
-      .team__container:before {
-        top: 80%; } }
 
 .accordeon__list {
   display: -webkit-box;
@@ -1552,8 +1570,8 @@ textarea {
       margin-bottom: 1.25rem; } }
 
 .accordeon__img {
-  width: 13.75rem;
-  height: 18.125rem;
+  width: 220px;
+  height: 290px;
   overflow: hidden;
   margin-bottom: 1.56rem; }
   @media screen and (max-width: 768px) {
@@ -1723,41 +1741,13 @@ textarea {
   fill: #c3c3c4;
   margin: 0.625rem 0.625rem; }
 
-.order-container {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .order-container:before {
-    display: block;
-    width: 50px;
-    height: 50px;
-    content: "";
-    position: absolute;
-    background: url("../img/order-section-berry.png") center center/contain no-repeat;
-    top: 73%;
-    left: 0%; }
-    @media screen and (max-width: 768px) {
-      .order-container:before {
-        display: none; } }
-  .order-container:after {
-    display: block;
-    width: 172px;
-    height: 197px;
-    content: "";
-    position: absolute;
-    background: url("../img/order-section-leaf.png") center center/contain no-repeat;
-    top: 61%;
-    right: -8%; }
-    @media screen and (max-width: 768px) {
-      .order-container:after {
-        display: none; } }
-
 .order {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 10rem; }
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
   @media screen and (max-width: 768px) {
     .order {
       -webkit-box-orient: vertical;
@@ -1911,19 +1901,24 @@ textarea {
     -ms-flex-pack: center;
     justify-content: center; } }
 
-.map {
-  display: block; }
+.map-section {
+  position: relative;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+
+.map-img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover; }
 
 .footer {
   position: absolute;
-  left: 0;
-  bottom: 0;
+  bottom: 0%;
   width: 100%;
   min-height: 80px;
   background-color: #ffffff; }
-  @media screen and (max-width: 480px) {
-    .footer {
-      min-height: 150px; } }
 
 .footer-container {
   display: -webkit-box;

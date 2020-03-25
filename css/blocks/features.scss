@@ -1,25 +1,6 @@
-.features {
-    background: url("../img/features-bg.jpg") center center / cover no-repeat;
-}
 
-.features__container {
-    position: relative;
 
-    &:before {
-        display: block;
-        max-width: rem(148px);
-        max-height: rem(220px);
-        content: "";
-        position: absolute;
-        background: url("../img/features-raspberries.png") center center / contain no-repeat;
-        left: 0%;
-        bottom: 0%;
-
-        @include phones {
-            display: none;
-        }
-    }
-}
+.features__container {}
 
 
 .features__disc {

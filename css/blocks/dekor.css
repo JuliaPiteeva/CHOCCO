@@ -1,0 +1,19 @@
+.hero:before {
+  display: block;
+  width: 80px;
+  height: 108px;
+  content: "";
+  position: absolute;
+  background: url("../img/hero-berries-2.png") center center/contain no-repeat;
+  bottom: -9%;
+  left: -5%; }
+
+.hero:after {
+  display: block;
+  width: 328px;
+  height: 149px;
+  content: "";
+  position: absolute;
+  background: url("../img/hero-berries-1.png") center center/contain no-repeat;
+  bottom: -12%;
+  right: 0%; }

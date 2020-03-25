@@ -1,4 +1,8 @@
 .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     min-height: rem(650px);
 
@@ -8,79 +12,16 @@
 }
 
 
-.section__title {
-    margin-top: rem(40px);
-    margin-bottom: rem(40px);
-    line-height: 1;
-    text-align: center;
-    color: #000;
-    font-size: rem(48px);
-    font-family: "Alegreya Sans";
-    font-weight: 700;
-    text-transform: uppercase;
-
-    h1 {
-        font-size: rem(48px);
-        font-family: "Alegreya Sans";
-        font-weight: 700;
-        text-transform: uppercase;
-    }
-
-    &--left {
-        text-align: left;
-    }
-
-    &--color--white {
-        color: white;
-    }
-
-    &--special--firstscreen h1 {
-        margin-top: rem(50px);
-        letter-spacing: 4px;
-        font-size: rem(53px);
-        line-height: 1.1;
-        text-align: left;
-
-        @include tablets {
-            margin-top: 0;
-            text-align: center;
-            letter-spacing: 0px;
-        }
-    }
-
-    &--color--green {
-        color: $green;
-    }
-
-    &--margin--bottom-small {
-        margin-bottom: rem(20px);
-    }
-
-    &--font-size-small {
-        font-size: rem(36px);
-
-        @include tablets {
-            text-align: center;
-        }
-    }
-
-    @include phones {
-        font-size: rem(40px);
-    }
-}
-
-
-
 .hero {
     background: url("../../img/hero-list.png") center center / cover no-repeat;
     background-color: #86c3d7;
-    padding-bottom: rem(30px);
-    position: relative;
 
-    @include tablets {
-        background: url("../../img/hero-768.png") center center / cover no-repeat;
-        background-color: #86c3d7;
-    }
+}
+
+.features {
+    background: url("../img/features-bg.jpg") center center / cover no-repeat;
+    position: relative;
+    z-index: -1;
 }
 
 .slider-section {
@@ -105,6 +46,5 @@
 }
 
 .map-section {
-    background: url("../img/map.jpg") center center / cover no-repeat;
-    padding-bottom: rem(90px);
+    position: relative;
 }

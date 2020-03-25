@@ -1,5 +1,12 @@
-.map {
-    display: block;
+.map-section {
+    position: relative;
+    align-items: flex-end;
 
+}
+
+.map-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 
 }

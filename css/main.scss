@@ -10,8 +10,10 @@ $white:#fff;
 
 @import "layout/section.scss";
 @import "layout/base.scss";
+@import "blocks/dekor.scss";
 
 @import "blocks/header.scss";
+@import "blocks/title.scss";
 @import "blocks/nav.scss";
 @import "blocks/hamburger.scss";
 @import "blocks/hamburger-menu.scss";

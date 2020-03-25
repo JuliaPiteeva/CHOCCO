@@ -2,23 +2,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    position: relative;
 
-    &::after {
-        display: block;
-        width: 180px;
-        height: 430px;
-        content: "";
-        position: absolute;
-        background: url("../../img/slider-berries.png") center center / contain no-repeat;
-        right: -6%;
-        bottom: -37%;
-
-        @include phones {
-            width: 125px;
-            height: 350px;
-        }
-    }
 }
 
 .slider {
@@ -34,7 +18,8 @@
 
     @include tablets {
         flex-direction: column;
-
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -45,7 +30,7 @@
 
     @include tablets {
         align-items: flex-start;
-        margin-top: 30%;
+        margin-top: 17%;
     }
 
 }
@@ -96,11 +81,6 @@
         right: 12%;
         background: url('../img/slider-leaf.png') center center / cover no-repeat;
     }
-
-    @include tablets {
-        width: 100%;
-        justify-content: center;
-    }
 }
 
 .slider-col-right {
@@ -112,8 +92,4 @@
     @include tablets {
         width: 100%;
     }
-}
-
-.bar__nutrition {
-    margin-top: 10%;
 }

@@ -20,31 +20,33 @@
                 />
               </a>
             </div>
-            <nav class="nav">
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a href="#" class="nav__link">О нас</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">Батончики</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">Команда</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">Меню</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">Отзывы</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">Как мы работаем</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">Контакты</a>
-                </li>
-              </ul>
-            </nav>
+            <div class="header__btns">
+              <nav class="nav">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">О нас</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Батончики</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Команда</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Меню</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Отзывы</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Как мы работаем</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
 
             <div class="contacts">
               <svg class="phone-icon">
@@ -58,11 +60,12 @@
               <div class="hamburger"></div>
             </a>
           </div>
+
           <div class="hero__content">
-            <div class="hero-wrapper">
+            <div class="hero-left-col">
               <div class="hero__text">
                 <div
-                  class="section__title section__title--margin--bottom-small section__title--special--firstscreen section__title--color--white"
+                  class="section__title section__title--color--white section__title--left"
                 >
                   <h1>натуральные шоколадные батончики</h1>
                 </div>
@@ -72,7 +75,7 @@
                     своим
                   </p>
                 </div>
-                <div class="btn btn--margin-bottom">
+                <div class="btn">
                   <a href="#" class="btn__link">Заказать</a>
                 </div>
               </div>
@@ -105,11 +108,16 @@
                 </ul>
               </div>
             </div>
-            <div class="hero__img">
+            <div class="hero-right-col">
               <img
                 src="img/hero-bat-img.png"
                 alt="Батончики"
-                class="hero__img-pic"
+                class="hero__img"
+              />
+              <img
+                src="img/hero-adaptiv-img.png"
+                alt="Батончики"
+                class="hero__img-adaptiv "
               />
             </div>
           </div>
@@ -461,7 +469,7 @@
                   <h3>Батончики с молоком</h3>
                 </div>
               </a>
-              <div class="menu__desc-content">
+              <div class="menu__desc-content menu__desc-content--active">
                 <article class="menu__desc-text">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -673,7 +681,6 @@
                       <input
                         type="radio"
                         name="radio"
-                        id="input"
                         class="switch-controls__radio"
                       />
                       <div class="input__visible"></div>
@@ -689,7 +696,6 @@
                       type="checkbox"
                       checked
                       name="checkbox"
-                      id="input"
                       class="switch-controls__checkbox"
                     />
                     <div class="input__visible-checkbox"></div>
@@ -711,7 +717,7 @@
       </section>
 
       <section class="section map-section">
-        <div class="container"></div>
+        <img src="img/map.jpg" alt="Карта" class="map-img" />
         <footer class="footer">
           <div class="container footer-container">
             <div class="footer__contacts">

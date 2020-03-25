@@ -1,32 +1,3 @@
-.reviews__container {
-    position: relative;
-
-    &:before {
-        display: block;
-        width: 148px;
-        height: 322px;
-        content: "";
-        position: absolute;
-        background: url("../img/reviews-berries-part.png") center center / contain no-repeat;
-        top: 73%;
-        left: -5%;
-        right: 0%;
-        bottom: 0%;
-    }
-
-    &:after {
-        display: block;
-        width: 148px;
-        height: 322px;
-        content: "";
-        position: absolute;
-        background: url("../img/reviews-berries-part-2.png") center center / contain no-repeat;
-        top: -13%;
-        right: -5%;
-
-    }
-}
-
 .reviews {
     display: flex;
     flex-direction: column;
@@ -134,7 +105,6 @@
 .reviews__icons-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 10%;
 }
 
 .reviews__icons-item {

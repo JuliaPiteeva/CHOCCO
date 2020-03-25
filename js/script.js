@@ -19,26 +19,26 @@ nutritionLink.addEventListener("click", function(event) {
   console.log("На данный момент работает только по hover");
 });
 
-// Секция "menu" аккордеон
+// // Секция "menu" аккордеон
 
-var menulinkArray = document.getElementsByClassName("menu__link");
-var menuContentArray = document.getElementsByClassName("menu__desc-content");
+// var menulinkArray = document.getElementsByClassName("menu__link");
+// var menuContentArray = document.getElementsByClassName("menu__desc-content");
 
-for (var i = 0; i < menulinkArray.length; i++) {
-  menulinkArray[i].addEventListener("click", function(e) {
-    e.preventDefault();
-    var openDesc = this.nextElementSibling;
-    openDesc.classList.toggle("menu__desc-content--active");
-  });
-}
+// for (var i = 0; i < menulinkArray.length; i++) {
+//   menulinkArray[i].addEventListener("click", function(e) {
+//     e.preventDefault();
+//     var openDesc = this.nextElementSibling;
+//     openDesc.classList.toggle("menu__desc-content--active");
+//   });
+// }
 
-var menuContentCloseArray = document.getElementsByClassName("close");
-for (var i = 0; i < menuContentCloseArray.length; i++) {
-  menuContentCloseArray[i].addEventListener("click", function(e) {
-    var closeDesc = this.parentNode;
-    var closeDesc2 = closeDesc.parentNode;
-    closeDesc2.classList.remove("menu__desc-content--active");
-  });
-}
-// Секция "team" аккордеон
-var teamLinkArray = document.getElementsByClassName("accordeon__title");
+// var menuContentCloseArray = document.getElementsByClassName("close");
+// for (var i = 0; i < menuContentCloseArray.length; i++) {
+//   menuContentCloseArray[i].addEventListener("click", function(e) {
+//     var closeDesc = this.parentNode;
+//     var closeDesc2 = closeDesc.parentNode;
+//     closeDesc2.classList.remove("menu__desc-content--active");
+//   });
+// }
+// // Секция "team" аккордеон
+// var teamLinkArray = document.getElementsByClassName("accordeon__title");

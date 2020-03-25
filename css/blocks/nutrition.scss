@@ -1,4 +1,13 @@
 .bar__nutrition {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: rem(30px);
+
+    @include tablets {
+        display: none;
+    }
+
     &:hover {
         .nutrition {
             display: block;
