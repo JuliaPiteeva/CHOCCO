@@ -27,8 +27,10 @@ var menuContentArray = document.getElementsByClassName("menu__desc-content");
 for (var i = 0; i < menulinkArray.length; i++) {
   menulinkArray[i].addEventListener("click", function(e) {
     e.preventDefault();
-    var openDesc = this.nextElementSibling;
-    openDesc.classList.toggle("menu__desc-content--active");
+    for (var k = 0; k < menuContentArray.length; k++) {
+      menuContentArray[k].classList.remove("menu__desc-content--active");
+    }
+    this.nextElementSibling.classList.add("menu__desc-content--active");
   });
 }
 
@@ -42,10 +44,20 @@ for (var i = 0; i < menuContentCloseArray.length; i++) {
 }
 // Секция "team" аккордеон
 var teamLinkArray = document.getElementsByClassName("accordeon__title");
+var accordeonIitem = document.getElementsByClassName("accordeon__item");
 
 for (var i = 0; i < teamLinkArray.length; i++) {
   teamLinkArray[i].addEventListener("click", function(e) {
-    var openElem = this.parentNode;
-    openElem.classList.toggle("accordeon--visible");
+    let thisActive = this.parentNode;
+    for (var k = 0; k < accordeonIitem.length; k++) {
+      if (k != i && !thisActive.classList.contains("accordeon--visible")) {
+        accordeonIitem[k].classList.remove("accordeon--visible");
+      }
+    }
+    if (!thisActive.classList.contains("accordeon--visible")) {
+      thisActive.classList.add("accordeon--visible");
+    } else {
+      thisActive.classList.remove("accordeon--visible");
+    }
   });
 }

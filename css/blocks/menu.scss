@@ -42,7 +42,7 @@
     background-color: transparent;
 
     @include phones {
-        width: rem(50px);
+        width: rem(70px);
     }
 }
 
@@ -66,12 +66,16 @@
 .menu__desc-content {
     height: 100%;
     float: left;
-    background: rgba(#2f3234, .93);
     width: 0;
     overflow: hidden;
+    position: relative;
 
     &--active {
         width: rem(300px);
+
+        @include phones {
+            width: 210px;
+        }
 
     }
 }
@@ -85,13 +89,15 @@
 
 
 .menu__desc-text {
+    background: rgba(#2f3234, .93);
+    height: 100%;
     font-size: rem(14px);
     color: #fff;
     padding: rem(60px) rem(30px);
     width: 100%;
     line-height: 1.8;
     display: block;
-    position: relative;
+
 
     @include phones {
         padding: rem(25px) rem(15px);
