@@ -1,13 +1,9 @@
-.nav {
-   
-}
-
 .nav__list {
     display: flex;
 }
 
 .nav__item {
-    margin-right: rem(20px);
+    margin-right: 20px;
 
     &:last-child {
         margin-right: 0px;

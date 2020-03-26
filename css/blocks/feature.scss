@@ -3,12 +3,12 @@
     flex-direction: column;
     align-items: center;
 
+
     @include phones {
         flex-direction: row;
+        margin-bottom: 40px;
     }
 }
-
-
 
 .feature__content {
     h2 {
@@ -17,10 +17,11 @@
         font-family: "Alegreya Sans";
         font-weight: 700;
         text-align: center;
-        margin-bottom: rem(26px);
+        margin-bottom: 26px;
 
         @include phones {
             text-align: left;
+            margin-bottom: 15px;
         }
     }
 
@@ -43,29 +44,37 @@
 }
 
 
+
 .feature__img {
-    width: rem(125px);
-    height: rem(125px);
+    width: 125px;
+    height: 125px;
     border-radius: 50%;
     background-color: #f2f5f4;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: rem(30px);
+    margin-bottom: 30px;
 
     @include phones {
-        margin-bottom: rem(0px);
-        margin-right: rem(10px);
+        margin-bottom: 0;
+        margin-right: 10px;
+        width: 105px;
+        height: 95px;
     }
 
 }
 
 .feature__img-pic {
     display: block;
-    max-width: rem(80px);
-    max-height: rem(70px);
+    max-width: 80px;
+    max-height: 70px;
     fill: #2e2e2d;
+
+    @include phones {
+        width: 70px;
+        height: 60px;
+    }
 
 }
 

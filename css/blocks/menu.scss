@@ -15,18 +15,18 @@
     right: 0;
     top: 0;
     bottom: 0;
+    display: flex;
 
-    // @extend %clearfix;
     @include phones {}
 }
 
 .menu__item {
-    float: left;
+    display: flex;
     height: 100%;
 }
 
 .menu__link {
-    width: rem(80px);
+    width: 80px;
     display: block;
     height: 100%;
     float: left;
@@ -46,7 +46,7 @@
     }
 
     @include phones {
-        width: rem(70px);
+        width: 50px;
     }
 }
 
@@ -62,7 +62,7 @@
     transform-origin: 0 0;
     left: 50%;
     top: 100%;
-    margin-top: rem(-20px);
+    margin-top: -20px;
 
     @include phones {
         font-size: rem(36px);
@@ -77,22 +77,10 @@
     position: relative;
 
     &--active {
-        width: rem(300px);
-
-        @include phones {
-            width: 210px;
-        }
-
+        max-width: 300px;
+        width: 100%;
     }
 }
-
-// .menu__desc-text {
-//     display: block;
-// }
-
-
-
-
 
 .menu__desc-text {
     background: rgba(#2f3234, .93);
@@ -103,11 +91,6 @@
     width: 100%;
     line-height: 1.8;
     display: block;
-
-
-    @include phones {
-        padding: rem(25px) rem(15px);
-    }
 }
 
 .close {
@@ -117,9 +100,9 @@
     width: rem(20px);
     height: rem(20px);
     fill: #c3c3c4;
-    margin: rem(10px) rem(10px);
-}
+    margin: 10px 10px;
 
+}
 
 
 

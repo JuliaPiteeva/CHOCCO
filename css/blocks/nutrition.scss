@@ -2,7 +2,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-bottom: rem(30px);
+    margin-bottom: 30px;
 
     @include tablets {
         display: none;
@@ -16,8 +16,8 @@
 }
 
 .bar__nutrition-link {
-    min-width: rem(100px);
-    min-height: rem(100px);
+    min-width: 100px;
+    min-height: 100px;
     display: flex;
     border-radius: 5px;
     background-color: #60aacc;
@@ -37,8 +37,8 @@
 }
 
 .bar__nutrition-icon {
-    max-width: rem(70px);
-    max-height: rem(55px);
+    max-width: 70px;
+    max-height: 55px;
     fill: $white;
     margin-bottom: 5px;
 }
@@ -50,7 +50,7 @@
     border: 1px solid #eeeeee;
     position: absolute;
     left: 61%;
-    min-width: rem(270px);
+    min-width: 270px;
 }
 
 
@@ -64,8 +64,8 @@
 
 
 .nutrition__icon-pic {
-    max-width: rem(50px);
-    max-height: rem(50px);
+    max-width: 50px;
+    max-height: 50px;
 }
 
 .nutrition__name {

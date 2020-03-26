@@ -1,7 +1,6 @@
 .hero__container {
     display: flex;
     flex-direction: column;
-    // align-items: center;
     height: 100%;
     color: #ffffff;
     font-family: "Alegreya Sans";
@@ -10,13 +9,33 @@
 
 .hero__content {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     flex: .8;
+
+
+}
+
+.hero-top-container {
+    display: flex;
 
     @include tablets {
         flex-direction: column-reverse;
         justify-content: center;
     }
+}
+
+.hero-bottom-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -26px;
+
+    @include tablets {
+        display: none;
+    }
+
 }
 
 .hero-left-col {
@@ -30,13 +49,18 @@
     }
 }
 
+.hero-right-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .hero__text {
     padding-top: rem(60px);
-    margin-bottom: rem(65px);
 
     @include tablets {
-        padding-top: rem(0px);
-        margin-bottom: 0;
+        padding-top: 0;
     }
 }
 
@@ -59,11 +83,13 @@
 
     @include tablets {
         display: block;
+        width: 80%;
+
     }
 }
 
 .hero__disc {
-    margin-bottom: rem(20px);
+    margin-bottom: 20px;
     padding-right: 20%;
 
 
@@ -85,14 +111,6 @@
 
 }
 
-.hero__icons {
-    margin-bottom: 15%;
-
-    @include tablets {
-        display: none;
-    }
-
-}
 
 .hero__icons-list {
     display: flex;
@@ -101,7 +119,7 @@
 .hero__icons-item {
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 50px;
 
     &:last-child {
         margin-right: 0px;
@@ -109,8 +127,8 @@
 }
 
 .hero__icons-pic {
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 60px;
+    max-height: 60px;
     fill: #c6f7ff;
     margin-right: 5px;
 }
@@ -123,5 +141,5 @@
 .hero__icons-text {
     font-size: rem(16px);
     font-weight: 400;
-
+    max-width: 100px;
 }

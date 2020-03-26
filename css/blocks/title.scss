@@ -1,5 +1,5 @@
 .section__title {
-    margin-bottom: rem(30px);
+    margin-bottom: 30px;
 
     h1 {
         line-height: 1.2;
@@ -16,8 +16,10 @@
         text-align: left;
 
         @include tablets {
+            font-size: rem(40px);
             text-align: center;
         }
+
     }
 
     &--color--white h1 {
@@ -29,8 +31,5 @@
         color: $green;
     }
 
-    @include tablets {
-        font-size: rem(40px);
-        text-align: center;
-    }
+
 }

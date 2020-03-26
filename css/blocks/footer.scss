@@ -4,10 +4,6 @@
     width: 100%;
     min-height: 80px;
     background-color: #ffffff;
-
-    @include phones {
-        // min-height: 150px
-    }
 }
 
 .footer-container {
@@ -22,8 +18,6 @@
         align-items: center;
         margin-top: 5%;
     }
-
-
 }
 
 .footer__social {
@@ -35,16 +29,4 @@
     @include phones {
         justify-content: center;
     }
-}
-
-.footer__contacts {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-
-    @include phones {
-        width: 100%;
-        text-align: center;
-    }
-
 }

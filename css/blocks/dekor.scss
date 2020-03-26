@@ -3,7 +3,6 @@
     position: relative;
 
     &:before {
-        display: block;
         width: 80px;
         height: 108px;
         content: "";
@@ -18,7 +17,6 @@
     }
 
     &:after {
-        display: block;
         width: 328px;
         height: 149px;
         content: "";
@@ -37,7 +35,6 @@
     position: relative;
 
     &:before {
-        display: block;
         max-width: 148px;
         max-height: 220px;
         content: "";
@@ -53,7 +50,6 @@
     position: relative;
 
     &::after {
-        display: block;
         width: 180px;
         height: 430px;
         content: "";
@@ -73,19 +69,14 @@
     position: relative;
 
     &:before {
-        display: block;
         width: 155px;
         height: 127px;
         content: "";
         position: absolute;
         background: url("../img/team-berry.png") center center / contain no-repeat;
         left: 0%;
-        bottom: -8%;
+        bottom: -5%;
         z-index: 20;
-
-        @include tablets {
-            top: 80%;
-        }
     }
 }
 
@@ -93,7 +84,6 @@
     position: relative;
 
     &:before {
-        display: block;
         width: 148px;
         height: 322px;
         content: "";
@@ -105,7 +95,6 @@
     }
 
     &:after {
-        display: block;
         width: 148px;
         height: 322px;
         content: "";
@@ -119,7 +108,6 @@
 
 .rewiews__card {
     &:after {
-        display: block;
         width: 120px;
         height: 150px;
         content: "";
@@ -134,7 +122,6 @@
     position: relative;
 
     &:before {
-        display: block;
         width: 50px;
         height: 50px;
         content: "";
@@ -150,7 +137,6 @@
     }
 
     &:after {
-        display: block;
         width: 172px;
         height: 197px;
         content: "";
