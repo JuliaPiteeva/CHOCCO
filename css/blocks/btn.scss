@@ -51,6 +51,8 @@
         background-color: transparent;
         text-transform: none;
         color: $green;
+        font-weight: 400;
+        font-size: rem(18px);
 
         &:hover {
             color: #000;

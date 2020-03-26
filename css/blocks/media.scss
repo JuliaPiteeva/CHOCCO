@@ -14,10 +14,3 @@
         @content;
     }
 }
-
-
-@media screen and (max-width: 768px) {
-    .section {
-        min-height: rem(1000px);
-    }
-}

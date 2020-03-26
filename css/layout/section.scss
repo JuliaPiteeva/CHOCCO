@@ -10,12 +10,12 @@
         justify-content: flex-start;
     }
 
-    @media tablets {
+    @include tablets {
         min-height: rem(1000px);
     }
 
-    @media phones {
-        min-height: rem(800px);
+    @include phones {
+        min-height: rem(900px);
     }
 }
 

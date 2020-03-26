@@ -1,35 +1,36 @@
 .hero {
 
     position: relative;
-&:before {
-    display: block;
-    width: 80px;
-    height: 108px;
-    content: "";
-    position: absolute;
-    background: url("../img/hero-berries-2.png") center center / contain no-repeat;
-    bottom: -6%;
-    left: 2%;
 
-    @include tablets {
-        display: none;
+    &:before {
+        display: block;
+        width: 80px;
+        height: 108px;
+        content: "";
+        position: absolute;
+        background: url("../img/hero-berries-2.png") center center / contain no-repeat;
+        bottom: -6%;
+        left: 2%;
+
+        @include tablets {
+            display: none;
+        }
     }
-}
 
-&:after {
-    display: block;
-    width: 328px;
-    height: 149px;
-    content: "";
-    position: absolute;
-    background: url("../img/hero-berries-1.png") center center / contain no-repeat;
-    bottom: -9%;
-    right: 9%;
+    &:after {
+        display: block;
+        width: 328px;
+        height: 149px;
+        content: "";
+        position: absolute;
+        background: url("../img/hero-berries-1.png") center center / contain no-repeat;
+        bottom: -9%;
+        right: 9%;
 
-    @include tablets {
-        display: none;
+        @include tablets {
+            display: none;
+        }
     }
-}
 }
 
 .features {
@@ -113,6 +114,19 @@
         top: -14%;
         right: 0%;
 
+    }
+}
+
+.rewiews__card {
+    &:after {
+        display: block;
+        width: 120px;
+        height: 150px;
+        content: "";
+        position: absolute;
+        background: url("../img/reviews-card-decor.png") center center / contain no-repeat;
+        top: 0%;
+        right: 0%;
     }
 }
 

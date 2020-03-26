@@ -30,7 +30,7 @@
 
     @include tablets {
         align-items: flex-start;
-        margin-top: 17%;
+        margin-top: 32%;
     }
 
 }
@@ -69,6 +69,10 @@
         left: 0%;
         top: 30%;
         background: url('../img/slider-leaf-2.png') center center / cover no-repeat;
+
+        @include phones {
+            top: 15%
+        }
     }
 
     &:after {
@@ -80,6 +84,11 @@
         bottom: 11%;
         right: 12%;
         background: url('../img/slider-leaf.png') center center / cover no-repeat;
+
+        @include phones {
+            bottom: -2%;
+            right: 1%;
+        }
     }
 
     @include tablets {

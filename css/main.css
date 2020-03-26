@@ -1,8 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,700,800&display=swap");
-@media screen and (max-width: 768px) {
-  .section {
-    min-height: 62.5rem; } }
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -10,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,700,800&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -312,67 +308,8 @@ template {
 [hidden] {
   display: none; }
 
-.section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 100vh;
-  min-height: 40.625rem; }
-  .section--align--top {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start; }
-  @media tablets {
-    .section {
-      min-height: 62.5rem; } }
-  @media phones {
-    .section {
-      min-height: 50rem; } }
-
-.hero {
-  background: url("../../img/hero-list.png") center center/cover no-repeat;
-  background-color: #86c3d7; }
-
-.features {
-  background: url("../img/features-bg.jpg") center center/cover no-repeat;
-  position: relative;
-  z-index: -1; }
-
-.slider-section {
-  background-color: #f8faf9; }
-
-.menu {
-  background: url("../img/menu-bg.jpg") 50% no-repeat;
-  background-size: cover;
-  position: relative; }
-
-.reviews-section {
-  background: #fff; }
-
-.order-section {
-  background: url("../img/order-bg.jpg") center center/cover no-repeat; }
-
-.map-section {
-  position: relative; }
-
 html {
-  font-size: 16px; }
-  @media screen and (max-width: 768px) {
-    html {
-      font-size: 15px; } }
-  @media screen and (max-width: 480px) {
-    html {
-      font-size: 14px; } }
+  font-size: 1rem; }
 
 html,
 body {
@@ -383,6 +320,12 @@ body {
   line-height: 1.42;
   position: relative;
   color: black; }
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 0.9375rem; } }
+  @media screen and (max-width: 480px) {
+    body {
+      font-size: 0.875rem; } }
 
 * {
   -webkit-box-sizing: border-box;
@@ -453,6 +396,59 @@ textarea {
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none; }
+
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh;
+  min-height: 40.625rem; }
+  .section--align--top {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+  @media screen and (max-width: 768px) {
+    .section {
+      min-height: 62.5rem; } }
+  @media screen and (max-width: 480px) {
+    .section {
+      min-height: 56.25rem; } }
+
+.hero {
+  background: url("../../img/hero-list.png") center center/cover no-repeat;
+  background-color: #86c3d7; }
+
+.features {
+  background: url("../img/features-bg.jpg") center center/cover no-repeat;
+  position: relative;
+  z-index: -1; }
+
+.slider-section {
+  background-color: #f8faf9; }
+
+.menu {
+  background: url("../img/menu-bg.jpg") 50% no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.reviews-section {
+  background: #fff; }
+
+.order-section {
+  background: url("../img/order-bg.jpg") center center/cover no-repeat; }
+
+.map-section {
+  position: relative; }
 
 .hero {
   position: relative; }
@@ -546,6 +542,16 @@ textarea {
     background: url("../img/reviews-berries-part-2.png") center center/contain no-repeat;
     top: -14%;
     right: 0%; }
+
+.rewiews__card:after {
+  display: block;
+  width: 120px;
+  height: 150px;
+  content: "";
+  position: absolute;
+  background: url("../img/reviews-card-decor.png") center center/contain no-repeat;
+  top: 0%;
+  right: 0%; }
 
 .order-section {
   position: relative; }
@@ -692,7 +698,7 @@ textarea {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   background-color: #333537;
@@ -792,7 +798,8 @@ textarea {
   margin-bottom: 4.0625rem; }
   @media screen and (max-width: 768px) {
     .hero__text {
-      padding-top: 0rem; } }
+      padding-top: 0rem;
+      margin-bottom: 0; } }
 
 .hero__img {
   width: 100%;
@@ -902,7 +909,9 @@ textarea {
   .button--reset {
     background-color: transparent;
     text-transform: none;
-    color: #365a49; }
+    color: #365a49;
+    font-weight: 400;
+    font-size: 1.125rem; }
     .button--reset:hover {
       color: #000; }
 
@@ -993,7 +1002,8 @@ textarea {
     margin-right: 0px; }
   @media screen and (max-width: 768px) {
     .features__item {
-      width: calc(100% / 3 - 15px); } }
+      width: calc(100% / 3 - 15px);
+      margin-right: 0; } }
   @media screen and (max-width: 480px) {
     .features__item {
       width: 100%; } }
@@ -1169,7 +1179,7 @@ textarea {
       -webkit-box-align: start;
       -ms-flex-align: start;
       align-items: flex-start;
-      margin-top: 17%; } }
+      margin-top: 32%; } }
 
 .right__link {
   display: block; }
@@ -1203,6 +1213,9 @@ textarea {
     left: 0%;
     top: 30%;
     background: url("../img/slider-leaf-2.png") center center/cover no-repeat; }
+    @media screen and (max-width: 480px) {
+      .slider-col-left:before {
+        top: 15%; } }
   .slider-col-left:after {
     content: " ";
     position: absolute;
@@ -1212,6 +1225,10 @@ textarea {
     bottom: 11%;
     right: 12%;
     background: url("../img/slider-leaf.png") center center/cover no-repeat; }
+    @media screen and (max-width: 480px) {
+      .slider-col-left:after {
+        bottom: -2%;
+        right: 1%; } }
   @media screen and (max-width: 768px) {
     .slider-col-left {
       width: 100%; } }
@@ -1371,7 +1388,7 @@ textarea {
       justify-content: center; } }
 
 .bar__content-calories {
-  margin-right: 13%; }
+  margin-right: 21%; }
   .bar__content-calories p {
     font-weight: 700; }
 
@@ -1665,7 +1682,7 @@ textarea {
       padding: 0 20%; } }
 
 .menu-bg {
-  background-color: rgba(51, 53, 55, 0.6);
+  background-color: rgba(51, 53, 55, 0.3);
   height: 100%;
   width: 100%; }
 
@@ -1673,9 +1690,6 @@ textarea {
   position: absolute;
   top: 10%;
   left: 10%; }
-  @media screen and (max-width: 480px) {
-    .menu__title {
-      display: none; } }
 
 .menu__list {
   position: absolute;
@@ -1696,14 +1710,21 @@ textarea {
   background-position: center center;
   background-repeat: no-repeat;
   text-decoration: none;
-  position: relative;
-  background-color: transparent; }
+  position: relative; }
+  .menu__link:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); }
   @media screen and (max-width: 480px) {
     .menu__link {
       width: 4.375rem; } }
 
 .menu__link-text {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Alegreya Sans";
   color: #fff;
   text-align: center;
   white-space: nowrap;
@@ -1719,7 +1740,7 @@ textarea {
   margin-top: -1.25rem; }
   @media screen and (max-width: 480px) {
     .menu__link-text {
-      font-size: 1.625rem; } }
+      font-size: 2.25rem; } }
 
 .menu__desc-content {
   height: 100%;
