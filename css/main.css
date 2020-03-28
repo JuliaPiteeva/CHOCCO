@@ -1175,21 +1175,34 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  text-align: center; }
+  text-align: center;
+  width: 930px;
+  overflow: hidden; }
 
-.slider-content {
+.slider__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  will-change: right;
+  -webkit-transition: right 0.3s;
+  -o-transition: right 0.3s;
+  transition: right 0.3s; }
+
+.slider__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 930px;
+  height: 100%; }
   @media screen and (max-width: 768px) {
-    .slider-content {
+    .slider__item {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1265,9 +1278,6 @@ textarea {
       .slider-col-left:after {
         bottom: -2%;
         right: 1%; } }
-  @media screen and (max-width: 768px) {
-    .slider-col-left {
-      width: 100%; } }
 
 .slider-col-right {
   width: 50%;
@@ -1285,63 +1295,13 @@ textarea {
     .slider-col-right {
       width: 100%; } }
 
-.bar__nutrition {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  margin-bottom: 30px; }
-  @media screen and (max-width: 768px) {
-    .bar__nutrition {
-      display: none; } }
-  .bar__nutrition:hover .nutrition {
-    display: block; }
-
-.bar__nutrition-link {
-  min-width: 100px;
-  min-height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 5px;
-  background-color: #60aacc;
-  padding: 2% 2%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer; }
-  .bar__nutrition-link p {
-    font-size: 0.875rem;
-    color: #ffffff;
-    font-family: "Alegreya Sans";
-    font-weight: 700;
-    text-transform: uppercase; }
-
-.bar__nutrition-icon {
-  max-width: 70px;
-  max-height: 55px;
-  fill: #fff;
-  margin-bottom: 5px; }
-
 .nutrition {
   display: none;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.94902);
   border: 1px solid #eeeeee;
   position: absolute;
-  left: 61%;
+  left: 22%;
   min-width: 270px; }
 
 .nutrition__icon {
@@ -1380,6 +1340,57 @@ textarea {
   width: 100%;
   -o-object-fit: contain;
   object-fit: contain; }
+
+.bar__nutrition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  position: relative; }
+  .bar__nutrition:hover .nutrition {
+    display: block; }
+  @media screen and (max-width: 768px) {
+    .bar__nutrition {
+      display: none; } }
+
+.bar__nutrition-link {
+  min-width: 100px;
+  min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
+  background-color: #60aacc;
+  padding: 2% 2%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer; }
+  .bar__nutrition-link p {
+    font-size: 0.875rem;
+    color: #ffffff;
+    font-family: "Alegreya Sans";
+    font-weight: 700;
+    text-transform: uppercase; }
+
+.bar__nutrition-icon {
+  max-width: 70px;
+  max-height: 55px;
+  fill: #fff;
+  margin-bottom: 5px; }
 
 .bar__title {
   font-size: 2.25rem;

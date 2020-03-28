@@ -2,8 +2,56 @@
     display: block;
     width: 100%;
     object-fit: contain;
+}
+
+.bar__nutrition {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    position: relative;
+
+    &:hover {
+        .nutrition {
+            display: block;
+        }
+    }
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.bar__nutrition-link {
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    border-radius: 5px;
+    background-color: #60aacc;
+    padding: 2% 2%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    p {
+        font-size: rem(14px);
+        color: #ffffff;
+        font-family: "Alegreya Sans";
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
 
 }
+
+.bar__nutrition-icon {
+    max-width: 70px;
+    max-height: 55px;
+    fill: $white;
+    margin-bottom: 5px;
+}
+
 
 
 .bar__title {

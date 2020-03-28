@@ -5,21 +5,35 @@
 
 }
 
+
 .slider {
     display: flex;
-    justify-content: center;
     text-align: center;
+    width: 930px;
+    overflow: hidden;
 }
 
-.slider-content {
+.slider__list {
+    display: flex;
+    position: relative;
+    will-change: right;
+    transition: right 0.3s;
+
+}
+
+.slider__item {
     display: flex;
     justify-content: center;
     text-align: center;
+    box-sizing: border-box;
+    width: 930px;
+    height: 100%;
 
     @include tablets {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
     }
 }
 
@@ -91,9 +105,6 @@
         }
     }
 
-    @include tablets {
-        width: 100%;
-    }
 }
 
 .slider-col-right {

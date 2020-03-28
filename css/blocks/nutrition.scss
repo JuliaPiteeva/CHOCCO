@@ -1,56 +1,15 @@
-.bar__nutrition {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-bottom: 30px;
-
-    @include tablets {
-        display: none;
-    }
-
-    &:hover {
-        .nutrition {
-            display: block;
-        }
-    }
-}
-
-.bar__nutrition-link {
-    min-width: 100px;
-    min-height: 100px;
-    display: flex;
-    border-radius: 5px;
-    background-color: #60aacc;
-    padding: 2% 2%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-
-    p {
-        font-size: rem(14px);
-        color: #ffffff;
-        font-family: "Alegreya Sans";
-        font-weight: 700;
-        text-transform: uppercase;
-    }
-}
-
-.bar__nutrition-icon {
-    max-width: 70px;
-    max-height: 55px;
-    fill: $white;
-    margin-bottom: 5px;
-}
-
 .nutrition {
     display: none;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.9490196078431372);
     border: 1px solid #eeeeee;
     position: absolute;
-    left: 61%;
+    left: 22%;
     min-width: 270px;
+
+    // &--active {
+    //     display: block;
+    // }
 }
 
 

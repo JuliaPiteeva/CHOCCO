@@ -13,11 +13,15 @@ hamburgerClose.addEventListener("click", function() {
 
 // Секция "slider" , кеопка состава батончика
 
-const nutritionLink = document.querySelector(".bar__nutrition-link");
-nutritionLink.addEventListener("click", function(event) {
-  event.preventDefault();
-  console.log("На данный момент работает только по hover");
-});
+const nutritionLink = document.querySelectorAll(".bar__nutrition-link");
+const nutritionShow = document.querySelectorAll(".nutrition");
+
+for (var i = 0; i < nutritionLink.length; i++) {
+  nutritionLink[i].addEventListener("click", function(event) {
+    event.preventDefault();
+    // this.nextElementSibling.classList.toggle("nutrition--active");
+  });
+}
 
 // Секция "menu" аккордеон
 
@@ -61,3 +65,56 @@ for (var i = 0; i < teamLinkArray.length; i++) {
     }
   });
 }
+// Секция Slider
+const left = document.querySelector(".left");
+const right = document.querySelector(".right");
+const items = document.querySelector(".slider__list");
+
+// right.addEventListener("click", function(e) {
+//   loop("right", e);
+// });
+
+// left.addEventListener("click", function(e) {
+//   loop("left", e);
+// });
+
+// function loop(direction, e) {
+//   e.preventDefault();
+//   if (direction === "right") {
+//     items.appendChild(items.firstElementChild);
+//   } else {
+//     items.insertBefore(items.lastElementChild, items.firstElementChild);
+//   }
+// }
+
+const minRight = 0;
+const maxRight = 930;
+const step = 930;
+
+let currentRight = 0;
+
+items.style.right = currentRight;
+
+right.addEventListener("click", function(e) {
+  e.preventDefault();
+
+  if (currentRight < maxRight) {
+    currentRight += step;
+    items.style.right = currentRight + "px";
+  }
+  // else {
+  //   loop("right", e);
+  // }
+});
+
+left.addEventListener("click", function(e) {
+  e.preventDefault();
+
+  if (currentRight > minRight) {
+    currentRight -= step;
+    items.style.right = currentRight + "px";
+  }
+  //  else {
+  //   loop("left", e);
+  // }
+});
