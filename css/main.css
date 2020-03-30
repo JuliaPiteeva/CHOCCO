@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -601,11 +602,13 @@ textarea {
     font-family: "Alegreya Sans";
     font-weight: 700;
     text-transform: uppercase; }
+    @media screen and (max-width: 480px) {
+      .section__title h1 {
+        font-size: 2.5rem; } }
   .section__title--left h1 {
     text-align: left; }
     @media screen and (max-width: 768px) {
       .section__title--left h1 {
-        font-size: 2.5rem;
         text-align: center; } }
   .section__title--color--white h1 {
     color: white;
@@ -817,7 +820,20 @@ textarea {
   padding-top: 3.75rem; }
   @media screen and (max-width: 768px) {
     .hero__text {
-      padding-top: 0; } }
+      padding-top: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
 .hero__img {
   width: 100%;
@@ -851,6 +867,9 @@ textarea {
     .hero__disc {
       text-align: center;
       padding: 0 20%; } }
+  @media screen and (max-width: 480px) {
+    .hero__disc {
+      padding: 0 13%; } }
 
 .hero__icons-list {
   display: -webkit-box;
@@ -890,7 +909,7 @@ textarea {
   font-family: "Alegreya Sans";
   font-weight: 800;
   text-transform: uppercase;
-  padding: 5% 10%;
+  padding: 22px 30px;
   border-radius: 50px;
   background-color: #ffffff; }
   .btn__link:hover {
@@ -910,7 +929,7 @@ textarea {
   font-weight: 800;
   text-transform: uppercase;
   background: #365a49;
-  padding: 5% 10%;
+  padding: 22px 30px;
   border-radius: 50px; }
   .button--reset {
     background-color: transparent;
@@ -923,8 +942,7 @@ textarea {
 
 .bar__content-btn {
   color: #fff;
-  background-color: #365a49;
-  padding: 20% 31%; }
+  background-color: #365a49; }
 
 .contacts {
   display: -webkit-box;
@@ -1169,38 +1187,38 @@ textarea {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  text-align: center; }
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  width: 930px;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
 
 .slider__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  will-change: right;
-  -webkit-transition: right 0.3s;
-  -o-transition: right 0.3s;
-  transition: right 0.3s; }
+  will-change: right; }
 
 .slider__item {
+  width: 100%;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  text-align: center;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 930px;
-  height: 100%; }
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
   @media screen and (max-width: 768px) {
     .slider__item {
       -webkit-box-orient: vertical;
@@ -1214,34 +1232,28 @@ textarea {
       -ms-flex-align: center;
       align-items: center; } }
 
-.left,
-.right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-  @media screen and (max-width: 768px) {
-    .left,
-    .right {
-      -webkit-box-align: start;
-      -ms-flex-align: start;
-      align-items: flex-start;
-      margin-top: 32%; } }
+@media screen and (max-width: 768px) {
+  .left__link {
+    position: absolute;
+    left: 0;
+    top: 25%;
+    z-index: 10; } }
 
-.right__link {
-  display: block; }
+@media screen and (max-width: 768px) {
+  .right__link {
+    position: absolute;
+    right: 0;
+    top: 25%; } }
 
 .left__icon {
   fill: #141414;
-  width: 15px;
-  height: 30px; }
+  width: 25px;
+  height: 40px; }
 
 .right__icon {
   fill: #141414;
-  width: 15px;
-  height: 30px; }
+  width: 25px;
+  height: 40px; }
 
 .slider-col-left {
   width: 50%;
@@ -1278,9 +1290,15 @@ textarea {
       .slider-col-left:after {
         bottom: -2%;
         right: 1%; } }
+  @media screen and (max-width: 768px) {
+    .slider-col-left {
+      width: 80%; } }
+  @media screen and (max-width: 480px) {
+    .slider-col-left {
+      width: 75%; } }
 
 .slider-col-right {
-  width: 50%;
+  width: 52%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1293,7 +1311,10 @@ textarea {
   justify-content: center; }
   @media screen and (max-width: 768px) {
     .slider-col-right {
-      width: 100%; } }
+      width: 100%;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
 .nutrition {
   display: none;
@@ -1303,6 +1324,9 @@ textarea {
   position: absolute;
   left: 22%;
   min-width: 270px; }
+
+.nutrition--active {
+  display: block; }
 
 .nutrition__icon {
   display: -webkit-box;
@@ -1353,8 +1377,6 @@ textarea {
   align-items: flex-start;
   margin-bottom: 30px;
   position: relative; }
-  .bar__nutrition:hover .nutrition {
-    display: block; }
   @media screen and (max-width: 768px) {
     .bar__nutrition {
       display: none; } }
@@ -1438,6 +1460,9 @@ textarea {
   margin-right: 21%; }
   .bar__content-calories p {
     font-weight: 700; }
+  @media screen and (max-width: 768px) {
+    .bar__content-calories {
+      margin-right: 13%; } }
 
 .bar__content-weight p {
   font-weight: 700; }
@@ -1464,6 +1489,9 @@ textarea {
   font-family: "Alegreya Sans";
   font-weight: 400;
   margin-bottom: 45px; }
+  @media screen and (max-width: 480px) {
+    .bar__content-text {
+      padding: 0 10% 0 10%; } }
 
 .bar__content-price {
   font-size: 3.75rem;
@@ -1476,55 +1504,49 @@ textarea {
 .bar__content-desc {
   margin-bottom: 30px; }
 
-.reviews {
+.reviews-show {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  position: relative; }
+
+.reviews__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  will-change: right; }
+
+.reviews__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  position: relative; }
-  .reviews:after {
-    display: block;
-    max-width: 140px;
-    max-height: 157px;
-    content: "";
-    position: absolute;
-    background: url("../img/reviews-card-decor.png") center center/contain no-repeat;
-    top: 0%;
-    right: 0; }
-
-.rewiews__card {
-  position: relative;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
+  width: 100%;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   -webkit-filter: drop-shadow(-10.649px 7.456px 15px rgba(151, 167, 156, 0.17));
   filter: drop-shadow(-10.649px 7.456px 15px rgba(151, 167, 156, 0.17));
   background-color: #f8faf9;
   padding: 5% 15% 5% 5%;
   margin-bottom: 20px; }
-  @media screen and (max-width: 768px) {
-    .rewiews__card {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      padding: 5% 5% 5% 5%; } }
-  @media screen and (max-width: 480px) {
-    .rewiews__card {
-      padding: 5% 5% 5% 5%; } }
+  .reviews__item:after {
+    position: absolute;
+    width: 140px;
+    height: 157px;
+    content: "";
+    background: url("../img/reviews-card-decor.png") center center/contain no-repeat;
+    top: 0%;
+    right: 0;
+    z-index: 1000; }
 
 .rewiews__card-img {
   display: -webkit-box;
@@ -1537,26 +1559,10 @@ textarea {
   max-height: 255px;
   margin-right: 20px;
   overflow: hidden; }
-  @media screen and (max-width: 768px) {
-    .rewiews__card-img {
-      margin-right: 0;
-      margin-bottom: 5%;
-      max-width: 135px;
-      max-height: 135px; } }
-  @media screen and (max-width: 480px) {
-    .rewiews__card-img {
-      margin-right: 0;
-      margin-bottom: 3%; } }
-
-.reviews__card-pic {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover; }
 
 .rewiews__card-content {
-  width: 60%; }
+  width: 60%;
+  text-align: left; }
   .rewiews__card-content h3 {
     font-size: 1.875rem;
     color: #000000;
@@ -1568,40 +1574,38 @@ textarea {
     color: #000000;
     font-family: "Alegreya Sans";
     font-weight: 500; }
-  @media screen and (max-width: 768px) {
-    .rewiews__card-content {
-      width: 100%;
-      text-align: center; } }
 
 .rewiews__card-text {
   font-size: 1.125rem;
   color: #666666;
   font-family: "Alegreya Sans";
   font-weight: 400;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  text-align: left; }
 
-.reviews__icons-list {
+.revies-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
-.reviews__icons-item {
-  margin-right: 10px; }
-  .reviews__icons-item:last-child {
-    margin-right: 0px; }
-
-.reviews__icons-img {
+.reviews__link {
+  display: block;
+  cursor: pointer;
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  overflow: hidden; }
-  .reviews__icons-img:hover {
-    border: 6px solid #365a49; }
+  overflow: hidden;
+  margin-right: 15px; }
+  .reviews__link:last-child {
+    margin-right: 0; }
 
-.reviews__icons-pic {
+.reviews__link-pic {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1683,12 +1687,11 @@ textarea {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 20px; }
-  .accordeon__title h2 {
-    font-size: 1.31rem;
-    color: #000000;
-    font-family: "Alegreya Sans";
-    font-weight: 700; }
+  margin-bottom: 20px;
+  font-size: 1.31rem;
+  color: #000000;
+  font-family: "Alegreya Sans";
+  font-weight: 700; }
   .accordeon__title:after {
     content: "";
     display: block;
@@ -1848,6 +1851,10 @@ textarea {
       flex-direction: column;
       padding: 0 1%; } }
 
+.order__email {
+  display: none;
+  height: 0; }
+
 .order-left-col {
   width: 50%;
   margin-right: 20px; }
@@ -1986,6 +1993,10 @@ textarea {
     -ms-flex-pack: center;
     justify-content: center; } }
 
+.error {
+  font-size: inherit;
+  color: red; }
+
 .map-section {
   position: relative;
   -webkit-box-align: end;
@@ -2068,3 +2079,62 @@ textarea {
   transition: .6s; }
   .social__icon:hover {
     fill: #000000; }
+
+.lock {
+  /* убираем скроллбары с основнового содержимого страницы */
+  overflow: hidden; }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #333537;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1000; }
+
+.overlay-container {
+  -webkit-filter: drop-shadow(0 0 20px rgba(4, 5, 5, 0.22));
+  filter: drop-shadow(0 0 20px rgba(4, 5, 5, 0.22));
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 35px 70px; }
+
+.content {
+  font-size: 18px;
+  color: #000000;
+  font-family: "Alegreya Sans";
+  font-weight: 400;
+  margin-bottom: 25px; }
+
+.overlay-close {
+  display: inline-block;
+  font-size: 1.1875rem;
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-weight: 800;
+  background-color: #365a49;
+  text-transform: uppercase;
+  padding: 23px 35px;
+  border-radius: 50px; }

@@ -1,0 +1,48 @@
+.lock {
+    /* убираем скроллбары с основнового содержимого страницы */
+    overflow: hidden;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #333537;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.overlay-container {
+    filter: drop-shadow(0 0 20px rgba(4, 5, 5, 0.22));
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 70px;
+}
+
+
+.content {
+    font-size: 18px;
+    color: #000000;
+    font-family: "Alegreya Sans";
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.overlay-close {
+    display: inline-block;
+    font-size: rem(19px);
+    color: #ffffff;
+    font-family: "Alegreya Sans";
+    font-weight: 800;
+    background-color: $green;
+    text-transform: uppercase;
+    padding: 23px 35px;
+    border-radius: 50px;
+}

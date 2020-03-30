@@ -10,13 +10,16 @@
         font-weight: 700;
         text-transform: uppercase;
 
+        @include phones {
+            font-size: rem(40px);
+        }
+
     }
 
     &--left h1 {
         text-align: left;
 
         @include tablets {
-            font-size: rem(40px);
             text-align: center;
         }
 

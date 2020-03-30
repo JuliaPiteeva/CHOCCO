@@ -61,6 +61,10 @@
 
     @include tablets {
         padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -106,6 +110,10 @@
     @include tablets {
         text-align: center;
         padding: 0 20%;
+    }
+
+    @include phones {
+        padding: 0 13%;
     }
 
 

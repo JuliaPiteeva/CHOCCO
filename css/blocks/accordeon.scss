@@ -67,15 +67,10 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-
-    h2 {
-        font-size: 1.31rem;
-        color: #000000;
-        font-family: "Alegreya Sans";
-        font-weight: 700;
-    }
-
-
+    font-size: 1.31rem;
+    color: #000000;
+    font-family: "Alegreya Sans";
+    font-weight: 700;
 
     &:after {
         content: "";

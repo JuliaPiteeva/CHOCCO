@@ -11,11 +11,11 @@
     margin-bottom: 30px;
     position: relative;
 
-    &:hover {
-        .nutrition {
-            display: block;
-        }
-    }
+    // &:hover {
+    //     .nutrition {
+    //         display: block;
+    //     }
+    // }
 
     @include tablets {
         display: none;
@@ -101,6 +101,10 @@
     p {
         font-weight: 700;
     }
+
+    @include tablets {
+        margin-right: 13%;
+    }
 }
 
 
@@ -127,6 +131,9 @@
     font-weight: 400;
     margin-bottom: 45px;
 
+    @include phones {
+        padding: 0 10% 0 10%;
+    }
 }
 
 .bar__content-price {
