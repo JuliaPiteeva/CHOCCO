@@ -1547,6 +1547,19 @@ textarea {
     top: 0%;
     right: 0;
     z-index: 1000; }
+  @media screen and (max-width: 768px) {
+    .reviews__item {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 10% 5% 5% 5%; } }
 
 .rewiews__card-img {
   display: -webkit-box;
@@ -1559,6 +1572,16 @@ textarea {
   max-height: 255px;
   margin-right: 20px;
   overflow: hidden; }
+  @media screen and (max-width: 768px) {
+    .rewiews__card-img {
+      margin-right: 0;
+      margin-bottom: 5%;
+      max-width: 135px;
+      max-height: 135px; } }
+  @media screen and (max-width: 480px) {
+    .rewiews__card-img {
+      margin-right: 0;
+      margin-bottom: 3%; } }
 
 .rewiews__card-content {
   width: 60%;
@@ -1574,6 +1597,10 @@ textarea {
     color: #000000;
     font-family: "Alegreya Sans";
     font-weight: 500; }
+  @media screen and (max-width: 768px) {
+    .rewiews__card-content {
+      width: 100%;
+      text-align: center; } }
 
 .rewiews__card-text {
   font-size: 1.125rem;
@@ -1582,6 +1609,10 @@ textarea {
   font-weight: 400;
   margin-bottom: 30px;
   text-align: left; }
+  @media screen and (max-width: 768px) {
+    .rewiews__card-text {
+      width: 100%;
+      text-align: center; } }
 
 .revies-icons {
   display: -webkit-box;

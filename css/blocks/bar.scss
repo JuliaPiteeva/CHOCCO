@@ -10,13 +10,6 @@
     align-items: flex-start;
     margin-bottom: 30px;
     position: relative;
-
-    // &:hover {
-    //     .nutrition {
-    //         display: block;
-    //     }
-    // }
-
     @include tablets {
         display: none;
     }
