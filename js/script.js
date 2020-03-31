@@ -187,11 +187,43 @@ function createOverlay(template) {
   };
 }
 ///////////////////////reviews/////////////////////////////////////////////////////
-const reviewsLinks = document.querySelectorAll(".reviews__link");
-const rewiewsList = document.querySelector(".reviews__list");
 
-for (var i = 0; i < reviewsLinks.length; i++) {
-  reviewsLinks[i].addEventListener("click", function(event) {
-    event.preventDefault();
-  });
+const leftIcon = document.querySelector("#left");
+const middleIcon = document.querySelector("#middle");
+const rightIcon = document.querySelector("#right");
+const reviewsItems = document.querySelectorAll(".reviews__item");
+const links = document.querySelectorAll(".reviews__link");
+
+var slideIndex = 1;
+
+leftIcon.addEventListener("click", function(e) {
+  e.preventDefault();
+  slideIndex = 0;
+  showSlides(slideIndex);
+});
+
+middleIcon.addEventListener("click", function(e) {
+  e.preventDefault();
+  slideIndex = 1;
+  showSlides(slideIndex);
+});
+
+rightIcon.addEventListener("click", function(e) {
+  e.preventDefault();
+  slideIndex = 2;
+  showSlides(slideIndex);
+});
+
+function showSlides(index) {
+  for (var i = 0; i < reviewsItems.length; i++) {
+    if (
+      reviewsItems[i].classList.contains("reviews__item--active") &&
+      links[i].classList.contains("reviews__link--active")
+    ) {
+      reviewsItems[i].classList.remove("reviews__item--active");
+      links[i].classList.remove("reviews__link--active");
+    }
+    reviewsItems[index].classList.add("reviews__item--active");
+    links[index].classList.add("reviews__link--active");
+  }
 }

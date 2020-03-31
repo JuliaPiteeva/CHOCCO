@@ -1,0 +1,10 @@
+@-webkit-keyframes changeOpacity {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+@keyframes changeOpacity {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
