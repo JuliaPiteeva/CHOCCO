@@ -17,10 +17,9 @@ const nutritionLinks = document.querySelectorAll(".bar__nutrition-link");
 const nutritionShows = document.querySelectorAll(".nutrition");
 
 for (var i = 0; i < nutritionLinks.length; i++) {
-  let lastActive;
   nutritionLinks[i].addEventListener("click", function(e) {
     e.preventDefault();
-    this.nextElementSibling.classList.add("nutrition--active");
+    this.nextElementSibling.classList.toggle("nutrition--active");
   });
 }
 
@@ -47,7 +46,7 @@ for (var i = 0; i < menuContentCloseArray.length; i++) {
     closeDesc2.classList.remove("menu__desc-content--active");
   });
 }
-////////////////////////////////////////////////// Секция "team" аккордеон
+////////////////////////Секция "team" аккордеон///////////////////////////
 var teamLinkArray = document.getElementsByClassName("accordeon__title");
 var accordeonIitem = document.getElementsByClassName("accordeon__item");
 
