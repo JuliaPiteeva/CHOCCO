@@ -1,0 +1,20 @@
+.nav__list {
+    display: flex;
+}
+
+.nav__item {
+    margin-right: rem(20px);
+    cursor: pointer;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.nav__link {
+    font-size: rem(18px);
+    color: #ffffff;
+    font-family: "Alegreya Sans";
+    font-weight: 400;
+    cursor: pointer;
+}

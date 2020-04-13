@@ -1,0 +1,17 @@
+$green: #365a49;
+$dark-green: #2e4e3f;
+$brown: #666666;
+$white: #fff;
+$grey: #626262;
+
+@import "blocks/media.scss";
+@import "layout/normalize.scss";
+@import "layout/fonts.scss";
+@import "layout/animation.scss";
+
+@import "layout/base.scss";
+@import "layout/section.scss";
+
+@import "blocks/dekor.scss";
+
+@import "./blocks/*.scss";

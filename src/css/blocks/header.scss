@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+
+    @include phones {
+        margin-top: 10px;
+    }
+}
+
+.logo {
+    margin-right: rem(10px);
+}
+
+.header__btns {
+    display: flex;
+    align-items: center;
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.contacts {
+    margin-right: rem(10px);
+}

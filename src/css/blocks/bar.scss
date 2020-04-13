@@ -1,0 +1,154 @@
+.bar__img {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+}
+
+.bar__nutrition {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  position: relative;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.bar__nutrition-link {
+  min-width: 100px;
+  min-height: 100px;
+  display: flex;
+  border-radius: 5px;
+  background-color: #60aacc;
+  padding: 2% 2%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  p {
+    font-size: rem(14px);
+    color: #ffffff;
+    font-family: "Alegreya Sans";
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.bar__nutrition-icon {
+  max-width: 70px;
+  max-height: 55px;
+  fill: $white;
+  margin-bottom: 5px;
+}
+
+.bar__title {
+  font-size: rem(36px);
+  color: #000000;
+  font-family: "Alegreya Sans";
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+
+  @include tablets {
+    font-size: rem(30px);
+    text-align: center;
+  }
+
+  @include phones {
+    font-size: rem(30px);
+    color: #151515;
+  }
+}
+
+.bar__content {
+  text-align: left;
+
+  @include tablets {
+    text-align: center;
+  }
+}
+
+.bar__content-desc {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: rem(18px);
+  color: #666666;
+  font-family: "Alegreya Sans";
+  font-weight: 400;
+
+  @include tablets {
+    justify-content: center;
+  }
+}
+
+.bar__content-calories {
+  margin-right: 21%;
+
+  p {
+    font-weight: 700;
+  }
+
+  @include tablets {
+    margin-right: 13%;
+  }
+}
+
+.bar__content-weight {
+  p {
+    font-weight: 700;
+  }
+}
+
+.bar__content-order {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  @include tablets {
+    justify-content: center;
+  }
+}
+
+.bar__content-text {
+  font-size: rem(18px);
+  color: #666666;
+  font-family: "Alegreya Sans";
+  font-weight: 400;
+  margin-bottom: 45px;
+  padding-right: 10%;
+
+  @include tablets {
+    padding-right: 0%;
+    padding: 0 10%;
+  }
+
+  @include phones {
+    padding: 0 11% 0 11%;
+    margin-bottom: 30px;
+  }
+}
+
+.bar__content-price {
+  font-size: rem(60px);
+  color: #151515;
+  font-family: "Alegreya Sans";
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-right: 5%;
+
+  @include phones {
+    font-size: rem(44px);
+  }
+}
+
+.bar__content-desc {
+  margin-bottom: 30px;
+
+  @include phones {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,137 @@
+.accordeon {}
+
+.accordeon__list {
+    display: flex;
+
+    min-height: 440px;
+
+    @include tablets {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
+.accordeon__item {
+    width: calc(100% / 4);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablets {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    @include phones {}
+}
+
+.accordeon__img {
+    width: 220px;
+    height: 290px;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    @include tablets {
+        height: 0;
+        order: 1;
+        margin-bottom: 0;
+    }
+
+    @include phones {
+        width: 143px;
+        height: 0;
+    }
+
+
+}
+
+.accordeon__img-pic {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.accordeon--visible {
+    .accordeon__elem {
+        height: 100%;
+    }
+
+    .accordeon__title:after {
+        border-top-width: 0px;
+        border-bottom-color: $green;
+        border-bottom-width: 7px;
+    }
+
+    .accordeon__img {
+        @include tablets {
+            height: 290px;
+        }
+
+        @include phones {
+            height: 184px;
+        }
+    }
+}
+
+.accordeon__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.31rem;
+    color: #000000;
+    font-family: "Alegreya Sans";
+    font-weight: 700;
+
+    &:after {
+        content: "";
+        display: block;
+        margin-left: 5px;
+        width: 0px;
+        height: 0px;
+        border: 7px solid transparent;
+        border-top-color: $green;
+        border-bottom-width: 0px;
+        border-left-width: 5px;
+        border-right-width: 5px;
+    }
+
+    @include tablets {
+        order: 0;
+    }
+}
+
+.accordeon__elem {
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+    font-size: rem(18px);
+
+    h3 {
+        color: #000000;
+        font-family: "Alegreya Sans";
+        font-weight: 400;
+        font-size: rem(18px);
+    }
+
+    p {
+        color: $brown;
+        font-family: "Alegreya Sans";
+        font-weight: 300;
+        text-align: center;
+
+
+    }
+
+    @include tablets {
+        order: 2;
+        padding: 0 30%;
+    }
+
+    @include phones {
+        padding: 0 20%;
+    }
+}
