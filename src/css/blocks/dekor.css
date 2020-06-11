@@ -4,9 +4,10 @@
   height: 108px;
   content: "";
   position: absolute;
-  background: url("../img/hero-berries-2.png") center center/contain no-repeat;
+  background: url("./img/hero-berries-2.png") center center/contain no-repeat;
   bottom: -9%;
-  left: -5%; }
+  left: -5%;
+}
 
 .hero:after {
   display: block;
@@ -16,4 +17,5 @@
   position: absolute;
   background: url("../img/hero-berries-1.png") center center/contain no-repeat;
   bottom: -12%;
-  right: 0%; }
+  right: 0%;
+}
